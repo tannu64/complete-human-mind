@@ -28,128 +28,272 @@ This is my attempt.
 
 ## Architecture — The Full Roadmap
 
-```mermaid
-graph TD
-    A["🧠 Human Brain Biology\n17 Major Systems"] 
-    B["📖 Mathematical Documentation\nTextbook-depth chapters\n.md + .tex format"]
-    C["📐 Mathematical Equations\n200+ published models\nAll from peer-reviewed papers"]
-    D["💻 Simulations\nPython/SciPy code\nRunnable, verifiable outputs"]
-    E["🤖 Individual Brain Agents\nEach region = 1 specialized agent\nEquation-driven behavior"]
-    F["🧩 Master Brain Agent\nOrchestrates all sub-agents\nLLM reasoning layer"]
-    G["⚙️ Hardware Deployment\nRaspberry Pi 4/5\nReal sensors + real-time equations"]
+From brain biology → mathematical equations → simulations → agents → hardware:
 
-    A --> B --> C --> D --> E --> F --> G
-
-    style A fill:#4a90d9,color:#fff
-    style B fill:#27ae60,color:#fff
-    style C fill:#27ae60,color:#fff
-    style D fill:#f39c12,color:#fff
-    style E fill:#e74c3c,color:#fff
-    style F fill:#e74c3c,color:#fff
-    style G fill:#8e44ad,color:#fff
+```
+BRAIN BIOLOGY
+     ↓
+MATHEMATICAL EQUATIONS    ← Done (17 chapters)
+     ↓
+SIMULATIONS (Code)        ← Started (Ch.1 params done)
+     ↓
+INDIVIDUAL AGENTS         ← Each brain region = 1 agent
+     ↓
+MASTER AGENT              ← Orchestrates all sub-agents
+     ↓
+HARDWARE DEPLOYMENT       ← Raspberry Pi + LLM layer
 ```
 
 ---
 
 ## Current Implementation Status
 
-```mermaid
-gantt
-    title Complete Human Mind — Progress
-    dateFormat  YYYY-MM-DD
-    
-    section Phase 1 — Documentation
-    17 Narrative Chapters (.md)         :done,    doc1, 2024-01-01, 2025-04-01
-    17 LaTeX Versions (.tex)            :done,    doc2, 2024-01-01, 2025-04-01
-    Visual Atlas (LaTeX)                :done,    doc3, 2024-01-01, 2025-04-01
-
-    section Phase 2 — Equations
-    17 Mathematical Equation Files      :done,    eq1, 2025-01-01, 2025-04-02
-    200+ Published Models               :done,    eq2, 2025-01-01, 2025-04-02
-
-    section Phase 3 — Simulations
-    Ch.1 Simulation Parameters (22 models) :done, sim1, 2025-04-01, 2025-04-02
-    Ch.2–17 Simulation Parameters       :active,  sim2, 2025-04-02, 2025-06-01
-    Python Code Implementations         :crit,    sim3, 2025-06-01, 2025-08-01
-
-    section Phase 4 — Agents
-    Individual Brain Agents             :crit,    ag1, 2025-08-01, 2025-10-01
-    Master Orchestrator Agent           :crit,    ag2, 2025-10-01, 2025-11-01
-
-    section Phase 5 — Hardware
-    Raspberry Pi Deployment             :crit,    hw1, 2025-11-01, 2026-01-01
-```
+| Phase | Status | Details |
+|-------|--------|---------|
+| **Phase 1 — Documentation** | ✅ Complete | 17 chapters, all .md files with 63 diagrams |
+| **Phase 2 — Equations** | ✅ Complete | 200+ models from published papers documented |
+| **Phase 2.5 — Simulation Parameters** | 🔄 In Progress | Ch.1 done with simulation parameters; Ch.2–17 pending |
+| **Phase 3 — Python Code** | 📋 Planned | Runnable simulations for every model |
+| **Phase 4 — Agent Modules** | 📋 Planned | Each brain region as a standalone agent |
+| **Phase 5 — Hardware** | 📋 Planned | Raspberry Pi deployment |
 
 ---
 
-## What's Been Built
+## What's Been Built — The 17 Chapters
 
-### Phase 1 — Complete ✅
+### **01 — Structural Anatomy of the Human Brain**
 
-**17 Complete Neuroscience Chapters**
+Covers gross brain anatomy (prosencephalon, mesencephalon, rhombencephalon), cerebral lobes, subcortical structures, limbic system, white matter tracts, and cytoarchitecture.
 
-Each one is textbook-depth. Not summaries. Real content covering the biology, circuitry, and function of one major brain system.
+![01_Gross_Anatomy_Brain_Divisions](01_Structural_Anatomy/diagrams/01_Gross_Anatomy_Brain_Divisions.png)
+![02_Cerebral_Cortex_Lobes](01_Structural_Anatomy/diagrams/02_Cerebral_Cortex_Lobes.png)
+![03_Subcortical_Structures](01_Structural_Anatomy/diagrams/03_Subcortical_Structures.png)
+![04_Limbic_System](01_Structural_Anatomy/diagrams/04_Limbic_System.png)
+![05_Support_Systems_WM_Ventricles](01_Structural_Anatomy/diagrams/05_Support_Systems_WM_Ventricles.png)
 
-```mermaid
-mindmap
-  root((Complete Human Mind))
-    Foundations
-      01 Structural Anatomy
-      02 Cellular Neuroscience
-      03 Electrochemical Signaling
-      04 Neurotransmitter Systems
-    Systems & Processing
-      05 Neural Circuits & Networks
-      06 Sensory Processing
-      07 Memory Systems
-      08 Consciousness & Awareness
-    Higher Functions
-      09 Emotion & Motivation
-      10 Language & Cognition
-      11 Development & Plasticity
-    Regulatory Systems
-      12 Neuroendocrine & Neuroimmune
-      13 Brain Metabolism & Blood Supply
-      14 Sleep Neuroscience
-    Lifespan & Frontiers
-      15 Aging & Neurodegeneration
-      16 Genetics & the Brain
-      17 Frontier Neuroscience
-```
+**Files:**
+- [Structural_Anatomy.md](01_Structural_Anatomy/Structural_Anatomy.md)
+- [Mathematical Equations](01_Structural_Anatomy/Mathematical_Equations/Structural_Anatomy_Mathematical_Equations.md) (22 models)
+- [Simulation Parameters](01_Structural_Anatomy/Simulations/Structural_Anatomy_Simulations.md)
 
 ---
 
-### Phase 2 — Complete ✅
+### **02 — Cellular Neuroscience**
 
-**200+ Published Mathematical Models**
+Neurons, glia, dendritic computation, neurogenesis, and axonal transport.
 
-Every brain function from the chapters is paired with the original published equations.
+![01_Neuron_Structure_Classification](02_Cellular_Neuroscience/diagrams/01_Neuron_Structure_Classification.png)
+![02_Glial_Cells](02_Cellular_Neuroscience/diagrams/02_Glial_Cells.png)
+![03_Neurogenesis](02_Cellular_Neuroscience/diagrams/03_Neurogenesis.png)
+![04_Cytoskeleton_Axonal_Transport](02_Cellular_Neuroscience/diagrams/04_Cytoskeleton_Axonal_Transport.png)
 
-Examples:
-- **Hodgkin-Huxley** (1952) — Action potentials
-- **Population Vector** (Georgopoulos 1986) — Motor cortex decoding
-- **Gabor Filter** (Jones & Palmer 1987) — V1 edge detection
-- **STDP** (Bi & Poo 1998) — Synaptic plasticity
-- **Place Cells** (O'Keefe 1971) — Hippocampal navigation
-- **TD Learning** (Schultz 1997) — Dopamine & reward
-- **Drift-Diffusion** (Ratcliff 1978) — Decision making
-- **Rescorla-Wagner** (1972) — Fear conditioning
-- **Wilson-Cowan** (1972) — Cortical oscillations
-- **Grid Cells** (Hafting 2005) — Hexagonal spatial coding
-- **Goldbeter Circadian** (1995) — 24-hour oscillations
-- And 190+ more...
+**Files:**
+- [Cellular_Neuroscience.md](02_Cellular_Neuroscience/Cellular_Neuroscience.md)
+- [Mathematical Equations](02_Cellular_Neuroscience/Mathematical_Equations/Cellular_Neuroscience_Mathematical_Equations.md)
 
 ---
 
-### Phase 2.5 — Chapter 1 Simulations Complete ✅
+### **03 — Electrochemical Signaling**
 
-Every equation in Chapter 1 now has:
-- Canonical parameter values from literature
-- Step-by-step simulation procedure
-- Expected outputs and verification tests
-- Solver recommendations (RK4/Euler/event-driven)
+Action potentials, resting potential, synaptic transmission, synaptic integration, neuromodulation, and neural oscillations.
 
-**File:** `01_Structural_Anatomy/Simulations/Structural_Anatomy_Simulations.md`
+![01_Resting_Membrane_Potential](03_Electrochemical_Signaling/diagrams/01_Resting_Membrane_Potential.png)
+![02_Action_Potential](03_Electrochemical_Signaling/diagrams/02_Action_Potential.png)
+![03_Synaptic_Transmission](03_Electrochemical_Signaling/diagrams/03_Synaptic_Transmission.png)
+![04_Synaptic_Integration](03_Electrochemical_Signaling/diagrams/04_Synaptic_Integration.png)
+![05_Neuromodulation_Oscillations](03_Electrochemical_Signaling/diagrams/05_Neuromodulation_Oscillations.png)
+
+**Files:**
+- [Electrochemical_Signaling.md](03_Electrochemical_Signaling/Electrochemical_Signaling.md)
+
+---
+
+### **04 — Neurotransmitter Systems**
+
+Glutamate, GABA, dopamine, serotonin, acetylcholine, neuropeptides, and co-transmission.
+
+![01_Glutamate_System](04_Neurotransmitter_Systems/diagrams/01_Glutamate_System.png)
+![02_GABA_Glycine_System](04_Neurotransmitter_Systems/diagrams/02_GABA_Glycine_System.png)
+![03_Monoamine_Systems](04_Neurotransmitter_Systems/diagrams/03_Monoamine_Systems.png)
+![04_Acetylcholine](04_Neurotransmitter_Systems/diagrams/04_Acetylcholine.png)
+![05_Neuropeptides_Other](04_Neurotransmitter_Systems/diagrams/05_Neuropeptides_Other.png)
+
+**Files:**
+- [Neurotransmitter_Systems.md](04_Neurotransmitter_Systems/Neurotransmitter_Systems.md)
+
+---
+
+### **05 — Neural Circuits and Networks**
+
+Canonical cortical columns, large-scale networks (DMN, salience, CEN), basal ganglia loops, reward circuits, fear circuits.
+
+![01_Circuit_Principles_Canonical_Column](05_Neural_Circuits_And_Networks/diagrams/01_Circuit_Principles_Canonical_Column.png)
+![02_Large_Scale_Brain_Networks](05_Neural_Circuits_And_Networks/diagrams/02_Large_Scale_Brain_Networks.png)
+![03_Sensory_Motor_Cerebellar_Circuits](05_Neural_Circuits_And_Networks/diagrams/03_Sensory_Motor_Cerebellar_Circuits.png)
+![04_Reward_Circuitry_Addiction](05_Neural_Circuits_And_Networks/diagrams/04_Reward_Circuitry_Addiction.png)
+![05_Fear_Hippocampal_Memory_Circuits](05_Neural_Circuits_And_Networks/diagrams/05_Fear_Hippocampal_Memory_Circuits.png)
+
+**Files:**
+- [Neural_Circuits_And_Networks.md](05_Neural_Circuits_And_Networks/Neural_Circuits_And_Networks.md)
+
+---
+
+### **06 — Sensory Processing**
+
+Vision, audition, somatosensation, pain, olfaction, gustation, vestibular, proprioception.
+
+![01_Sensory_Principles](06_Sensory_Processing/diagrams/01_Sensory_Principles.png)
+![02_Vision](06_Sensory_Processing/diagrams/02_Vision.png)
+![03_Audition](06_Sensory_Processing/diagrams/03_Audition.png)
+![04_Somatosensation_Pain](06_Sensory_Processing/diagrams/04_Somatosensation_Pain.png)
+![05_Chemical_Vestibular_Body_Senses](06_Sensory_Processing/diagrams/05_Chemical_Vestibular_Body_Senses.png)
+
+**Files:**
+- [Sensory_Processing.md](06_Sensory_Processing/Sensory_Processing.md)
+
+---
+
+### **07 — Memory Systems**
+
+Working memory, LTP/LTD, memory consolidation, retrieval, reconsolidation, place cells, grid cells.
+
+![01_Memory_Taxonomy](07_Memory_Systems/diagrams/01_Memory_Taxonomy.png)
+![02_Memory_Encoding](07_Memory_Systems/diagrams/02_Memory_Encoding.png)
+![03_Synaptic_Plasticity](07_Memory_Systems/diagrams/03_Synaptic_Plasticity.png)
+![04_Memory_Consolidation](07_Memory_Systems/diagrams/04_Memory_Consolidation.png)
+![05_Retrieval_Reconsolidation](07_Memory_Systems/diagrams/05_Retrieval_Reconsolidation.png)
+![06_Specialized_Phenomena](07_Memory_Systems/diagrams/06_Specialized_Phenomena.png)
+
+**Files:**
+- [Memory_Systems.md](07_Memory_Systems/Memory_Systems.md)
+
+---
+
+### **08 — Consciousness and Awareness**
+
+Neural correlates of consciousness, attention networks, arousal, anesthesia, dreaming, free will.
+
+![01_Consciousness_Definition_NCC](08_Consciousness_And_Awareness/diagrams/01_Consciousness_Definition_NCC.png)
+![02_Theories_Of_Consciousness](08_Consciousness_And_Awareness/diagrams/02_Theories_Of_Consciousness.png)
+![03_Attention_Networks](08_Consciousness_And_Awareness/diagrams/03_Attention_Networks.png)
+![04_Arousal_Anesthesia_Dreaming_FreeWill](08_Consciousness_And_Awareness/diagrams/04_Arousal_Anesthesia_Dreaming_FreeWill.png)
+
+**Files:**
+- [Consciousness_And_Awareness.md](08_Consciousness_And_Awareness/Consciousness_And_Awareness.md)
+
+---
+
+### **09 — Emotion and Motivation**
+
+Amygdala, PFC regulation, insula interoception, drives (hunger, thermoregulation), stress response, autonomic nervous system, social neuroscience.
+
+![01_Theories_Amygdala](09_Emotion_And_Motivation/diagrams/01_Theories_Amygdala.png)
+![02_PFC_Regulation_Insula](09_Emotion_And_Motivation/diagrams/02_PFC_Regulation_Insula.png)
+![03_Drives_Stress_Response](09_Emotion_And_Motivation/diagrams/03_Drives_Stress_Response.png)
+![04_ANS_Social_Neuroscience](09_Emotion_And_Motivation/diagrams/04_ANS_Social_Neuroscience.png)
+
+**Files:**
+- [Emotion_And_Motivation.md](09_Emotion_And_Motivation/Emotion_And_Motivation.md)
+
+---
+
+### **10 — Language and Cognition**
+
+Language neurobiology (dual streams), executive function, decision-making, creativity, numerical cognition, music.
+
+![01_Language_Neurobiology](10_Language_And_Cognition/diagrams/01_Language_Neurobiology.png)
+![02_Executive_Function_Decisions](10_Language_And_Cognition/diagrams/02_Executive_Function_Decisions.png)
+![03_Creativity_Numbers_Music](10_Language_And_Cognition/diagrams/03_Creativity_Numbers_Music.png)
+
+**Files:**
+- [Language_And_Cognition.md](10_Language_And_Cognition/Language_And_Cognition.md)
+
+---
+
+### **11 — Brain Development and Plasticity**
+
+Prenatal development (neural tube, migration, axon guidance), postnatal development (synaptic pruning, myelination, critical periods), adult neuroplasticity, epigenetics.
+
+![01_Prenatal_Development](11_Brain_Development_And_Plasticity/diagrams/01_Prenatal_Development.png)
+![02_Postnatal_Development](11_Brain_Development_And_Plasticity/diagrams/02_Postnatal_Development.png)
+![03_Adult_Plasticity_Epigenetics_Evolution](11_Brain_Development_And_Plasticity/diagrams/03_Adult_Plasticity_Epigenetics_Evolution.png)
+
+**Files:**
+- [Brain_Development_And_Plasticity.md](11_Brain_Development_And_Plasticity/Brain_Development_And_Plasticity.md)
+
+---
+
+### **12 — Neuroendocrine and Neuroimmune Systems**
+
+Blood-brain barrier, pituitary axes, neuroinflammation, gut-brain axis, circadian rhythms.
+
+![01_BBB_Pituitary_Axes](12_Neuroendocrine_And_Neuroimmune/diagrams/01_BBB_Pituitary_Axes.png)
+![02_Neuroinflammation_GutBrain_Circadian](12_Neuroendocrine_And_Neuroimmune/diagrams/02_Neuroinflammation_GutBrain_Circadian.png)
+
+**Files:**
+- [Neuroendocrine_And_Neuroimmune.md](12_Neuroendocrine_And_Neuroimmune/Neuroendocrine_And_Neuroimmune.md)
+
+---
+
+### **13 — Brain Metabolism and Blood Supply**
+
+Energy metabolism, glucose pathways, cerebral circulation, autoregulation, neurovascular coupling, BOLD signal, ischemic stroke.
+
+![01_Brain_Metabolism](13_Brain_Metabolism_And_Blood_Supply/diagrams/01_Brain_Metabolism.png)
+![02_Blood_Supply_Regulation](13_Brain_Metabolism_And_Blood_Supply/diagrams/02_Blood_Supply_Regulation.png)
+
+**Files:**
+- [Brain_Metabolism_And_Blood_Supply.md](13_Brain_Metabolism_And_Blood_Supply/Brain_Metabolism_And_Blood_Supply.md)
+
+---
+
+### **14 — Sleep Neuroscience**
+
+Sleep architecture (NREM stages, REM), two-process model, circadian rhythm, sleep circuits, glymphatic system, sleep functions and disorders.
+
+![01_Sleep_Architecture_Regulation](14_Sleep_Neuroscience/diagrams/01_Sleep_Architecture_Regulation.png)
+![02_Sleep_Circuits_Glymphatic](14_Sleep_Neuroscience/diagrams/02_Sleep_Circuits_Glymphatic.png)
+![03_Sleep_Functions_Disorders](14_Sleep_Neuroscience/diagrams/03_Sleep_Functions_Disorders.png)
+
+**Files:**
+- [Sleep_Neuroscience.md](14_Sleep_Neuroscience/Sleep_Neuroscience.md)
+
+---
+
+### **15 — Aging and Neurodegeneration**
+
+Normal brain aging, Alzheimer's disease (amyloid, tau, Braak staging), Parkinson's disease, FTD, Huntington's, ALS, DLB.
+
+![01_Normal_Brain_Aging](15_Aging_And_Neurodegeneration/diagrams/01_Normal_Brain_Aging.png)
+![02_Alzheimers_Disease](15_Aging_And_Neurodegeneration/diagrams/02_Alzheimers_Disease.png)
+![03_Other_Neurodegenerative_Diseases](15_Aging_And_Neurodegeneration/diagrams/03_Other_Neurodegenerative_Diseases.png)
+
+**Files:**
+- [Aging_And_Neurodegeneration.md](15_Aging_And_Neurodegeneration/Aging_And_Neurodegeneration.md)
+
+---
+
+### **16 — Genetics and the Brain**
+
+Heritability, genetic architecture, GWAS, rare variants, ion channels, neurotransmitter genes, epigenetics, pharmacogenomics, gene × environment.
+
+![01_Heritability_Architecture_Genes](16_Genetics_And_The_Brain/diagrams/01_Heritability_Architecture_Genes.png)
+![02_Epigenetics_Pharmacogenomics_GxE](16_Genetics_And_The_Brain/diagrams/02_Epigenetics_Pharmacogenomics_GxE.png)
+
+**Files:**
+- [Genetics_And_The_Brain.md](16_Genetics_And_The_Brain/Genetics_And_The_Brain.md)
+
+---
+
+### **17 — Frontier Neuroscience**
+
+Connectomics (C. elegans, Drosophila, human), brain organoids, brain-computer interfaces, optogenetics, chemogenetics, advanced imaging, emerging therapeutics, AI.
+
+![01_Connectomics_Organoids_BCIs](17_Frontier_Neuroscience/diagrams/01_Connectomics_Organoids_BCIs.png)
+![02_Tools_Therapeutics_AI](17_Frontier_Neuroscience/diagrams/02_Tools_Therapeutics_AI.png)
+
+**Files:**
+- [Frontier_Neuroscience.md](17_Frontier_Neuroscience/Frontier_Neuroscience.md)
 
 ---
 
@@ -157,201 +301,90 @@ Every equation in Chapter 1 now has:
 
 | Item | Count |
 |------|-------|
-| Complete chapters | 17 |
+| Chapters | 17 |
+| Diagrams | 63 (all PNG, rendered) |
 | Total files | 68+ |
 | Published equations documented | 200+ |
-| Original papers cited | 150+ |
+| Original research papers cited | 150+ |
 | Ch.1 simulation-ready models | 22 |
 | Planned sub-agents | 8+ |
-| Target deployment platform | Raspberry Pi 4/5 |
-
----
-
-## Planned Agent Architecture
-
-```mermaid
-graph TB
-    LLM["🗣️ LLM Reasoning Layer\nLanguage / Planning / Meta-cognition\nMistral 7B or Llama 3.2"]
-    MASTER["🧠 Master Brain Agent\nOrchestrates all sub-agents\nSignal integration & prioritization"]
-
-    LLM <--> MASTER
-
-    MASTER --> MEM["💾 Memory Agent\nCh.7 — Hippocampus\nSTDP, place cells, consolidation"]
-    MASTER --> VIS["👁️ Vision Agent\nCh.6 — Visual cortex\nGabor filters, motion energy"]
-    MASTER --> EMO["❤️ Emotion Agent\nCh.9 — Amygdala\nRescorla-Wagner, fear, HPA"]
-    MASTER --> MOT["🦾 Motor Agent\nCh.1/5 — M1, cerebellum, BG\nPopulation vector, TD learning"]
-    MASTER --> LANG["💬 Language Agent\nCh.10 — Broca/Wernicke\nDrift-diffusion, syntax models"]
-    MASTER --> SLEP["😴 Sleep Agent\nCh.14 — SCN\nCircadian, flip-flop, glymphatic"]
-    MASTER --> HOME["⚖️ Homeostasis Agent\nCh.12/13 — Hypothalamus\nThermoregulation, metabolism"]
-    MASTER --> ATT["🔍 Attention Agent\nCh.8 — Thalamus, cortex\nThalamocortical gating, IIT"]
-
-    style LLM fill:#2c3e50,color:#fff,stroke:#fff,stroke-width:2px
-    style MASTER fill:#e74c3c,color:#fff,stroke:#fff,stroke-width:3px
-    style MEM fill:#3498db,color:#fff
-    style VIS fill:#3498db,color:#fff
-    style EMO fill:#3498db,color:#fff
-    style MOT fill:#3498db,color:#fff
-    style LANG fill:#3498db,color:#fff
-    style SLEP fill:#3498db,color:#fff
-    style HOME fill:#3498db,color:#fff
-    style ATT fill:#3498db,color:#fff
-```
-
----
-
-## Planned Hardware Architecture
-
-```mermaid
-graph TB
-    subgraph Pi["⚙️ Raspberry Pi 4/5"]
-        direction TB
-        OS["📦 Linux OS\npython3, scipy, numpy"]
-        LLM_PROC["🗣️ LLM Process\nMistral 7B / Llama 3.2"]
-        AGENT_MGR["🧠 Agent Manager\nMaster + sub-agent orchestration"]
-        SIM_ENGINE["📐 Simulation Engine\nPython + SciPy\nReal-time ODE solver"]
-    end
-
-    subgraph In["📥 Sensors (Input)"]
-        CAM["📷 USB Camera"]
-        MIC["🎤 USB Microphone"]
-        TEMP["🌡️ Temperature Sensor\n(DS18B20)"]
-        IMU["📐 IMU / Gyroscope"]
-    end
-
-    subgraph Out["📤 Output"]
-        DISP["🖥️ HDMI Display\nor Speaker Output"]
-        MOT["⚙️ GPIO Output\nServo / Motor Control"]
-    end
-
-    CAM -->|USB| Pi
-    MIC -->|USB| Pi
-    TEMP -->|GPIO| Pi
-    IMU -->|I2C| Pi
-    
-    SIM_ENGINE --> AGENT_MGR
-    AGENT_MGR <--> LLM_PROC
-    AGENT_MGR --> DISP
-    AGENT_MGR --> MOT
-
-    style Pi fill:#27ae60,color:#fff,stroke:#fff,stroke-width:2px
-    style In fill:#3498db,color:#fff
-    style Out fill:#e74c3c,color:#fff
-```
-
----
-
-## What Makes This Different
-
-| Other AI Systems | This Project |
-|-----------------|-------------|
-| Loosely "brain-inspired" | Exactly follows published neuroscience equations |
-| Black box | Every behavior traceable to a real brain region + equation |
-| One monolithic model | Network of specialized agents (like actual brain regions) |
-| Software simulation | Designed for physical hardware deployment (Raspberry Pi) |
-| Generic parameters | Every value is a measured biological measurement |
-| Ignores neuroscience | Grounded entirely in computational neuroscience literature |
 
 ---
 
 ## File Structure
 
 ```
-Complete Human Mind/
-├── README.md                               ← You are here
-├── 00_Overview.md                          ← Master index & key facts
-├── Complete_Human_Mind_Visual_Atlas.tex    ← LaTeX visual atlas
+complete-human-mind/
+├── README.md                                ← You are here
+├── 00_Overview.md                           ← Master index
+├── Complete_Human_Mind_Visual_Atlas.pdf     ← All 63 diagrams in PDF
 │
 ├── 01_Structural_Anatomy/
-│   ├── Structural_Anatomy.md               ← Chapter content
-│   ├── Structural_Anatomy.tex              ← LaTeX version
+│   ├── Structural_Anatomy.md                ← Chapter content
+│   ├── Structural_Anatomy.pdf               ← PDF version
 │   ├── Mathematical_Equations/
 │   │   ├── Structural_Anatomy_Mathematical_Equations.md   ← 22 models
-│   │   └── Structural_Anatomy_Mathematical_Equations.tex
-│   └── Simulations/
-│       └── Structural_Anatomy_Simulations.md              ← Simulation params ✅
+│   │   └── Structural_Anatomy_Mathematical_Equations.pdf
+│   ├── Simulations/
+│   │   └── Structural_Anatomy_Simulations.md   ← Simulation parameters ✅
+│   └── diagrams/
+│       ├── 01_Gross_Anatomy_Brain_Divisions.png
+│       ├── 02_Cerebral_Cortex_Lobes.png
+│       ├── 03_Subcortical_Structures.png
+│       ├── 04_Limbic_System.png
+│       └── 05_Support_Systems_WM_Ventricles.png
 │
-├── 02_Cellular_Neuroscience/ ... (same structure × 16 more chapters)
+├── 02_Cellular_Neuroscience/ ... (same structure)
+├── 03_Electrochemical_Signaling/
+├── ... [14 more chapters] ...
 └── 17_Frontier_Neuroscience/
 ```
 
-Each chapter folder contains:
-- Narrative (.md + .tex)
-- Mathematical equations companion (.md + .tex)
-- Simulation parameters (in progress for Ch.2–17)
-- Code implementations (planned)
-
 ---
 
-## Roadmap — What's Next
+## Roadmap
 
-| Phase | Status | What's Happening |
-|-------|--------|------------------|
-| **1 — Documentation** | ✅ Complete | 17 chapters, all .md + .tex files |
-| **2 — Equations** | ✅ Complete | 200+ models from published papers documented |
-| **2.5 — Simulation Parameters** | 🔄 In Progress | Ch.1 done; Ch.2–17 pending |
-| **3 — Python Code** | 📋 Planned | Runnable simulations for every model (SciPy + NumPy) |
-| **4 — Agent Modules** | 📋 Planned | Each brain region as a standalone agent |
-| **5 — Master Orchestrator** | 📋 Planned | Coordinates all sub-agents + LLM reasoning |
-| **6 — Hardware Deployment** | 📋 Planned | Raspberry Pi with real sensors |
+| Phase | Status | What's Next |
+|-------|--------|----------|
+| 1 — Documentation | ✅ Complete | All 17 chapters with diagrams |
+| 2 — Equations | ✅ Complete | 200+ models documented |
+| 2.5 — Simulation Parameters | 🔄 In Progress | Ch.2–17 simulation parameters |
+| 3 — Python Code | 📋 Planned | Runnable simulations (SciPy) |
+| 4 — Agent Modules | 📋 Planned | Specialized agents per brain region |
+| 5 — Master Orchestrator | 📋 Planned | Integrates all agents + LLM |
+| 6 — Hardware | 📋 Planned | Raspberry Pi deployment |
 
 ---
 
 ## How to Use This
 
-1. **As a textbook:** Read the chapters (01–17) for comprehensive neuroscience reference
-2. **As an equation library:** Find any brain function in the Mathematical_Equations files
-3. **As simulation parameters:** Run the simulation models (Python, MATLAB, Brian2, NEURON)
-4. **As agent templates:** When agent code is released, use these as your agent behavior specifications
-5. **As a hardware blueprint:** When hardware code is released, deploy to Raspberry Pi
+1. **As a neuroscience reference:** Read the chapters (Markdown or PDF)
+2. **As a visual quick-reference:** Browse the diagrams (63 PNG files, organized by chapter)
+3. **As mathematical documentation:** Find published equations in the Mathematical_Equations folders
+4. **As simulation parameters:** Use Ch.1 Simulations folder; Ch.2–17 coming soon
+5. **As an agent blueprint:** When agent code is released, these will be your behavior specifications
 
 ---
 
 ## Contributing
 
-Contributions welcome. This is open source (MIT License). If you want to:
-- **Add a simulation** — pick a chapter, find an equation, write the Python code
-- **Build an agent** — pick a brain region, implement its behavioral spec
-- **Deploy to hardware** — help port the agent system to Raspberry Pi
-- **Improve documentation** — typos, clarity, citations
+This is open source (MIT License). Contributions welcome:
+- **Add simulations** — pick a chapter's equations, write Python code
+- **Improve diagrams** — enhance any of the 63 PNG/diagram files
+- **Build agents** — implement brain region behavior
+- **Hardware porting** — help deploy to Raspberry Pi
 
-Just fork and PR.
-
----
-
-## Suggested LinkedIn Post
-
-```
-Side project I've been working on quietly.
-
-I'm an EE + AI engineer — not a neuroscientist.
-But I got curious: can you describe the entire human brain in mathematics?
-
-So I built it.
-
-17 chapters. 200+ published computational neuroscience models.
-Every brain function — Hodgkin-Huxley neurons, hippocampal place cells, 
-dopamine TD learning, circadian oscillators — all documented from original papers.
-
-The endgame: each brain region becomes an AI agent.
-A master agent orchestrates them all.
-It runs on a Raspberry Pi.
-
-It's open source. Still building.
-
-[GitHub link]
-
-#AI #NeuralNetworks #ComputationalNeuroscience #OpenSource #SideProject #EE #ADHD
-```
+Fork, modify, and submit a PR.
 
 ---
 
 ## About
 
-This started as a curiosity. I'm an electrical engineer by training, AI developer by trade. One day I wondered: *"What if I could express every brain function as a mathematical equation, then build agents that follow those equations?"*
+This started as a curiosity. I'm an electrical engineer + AI developer. One day I wondered: *"What if I could express every brain function as a mathematical equation, then build agents that follow those equations?"*
 
-Most of my work is automation and AI — n8n workflows, Python backends, prompt engineering. But this project scratches a different itch. It's asking: **What would an intelligence look like if it were truly grounded in neurobiology?**
+Most of my work is automation and AI systems. But this project scratches a different itch. It's asking: **What would an intelligence look like if it were truly grounded in neurobiology?**
 
-It's still very much a work in progress. But it's open source and it's going on GitHub.
+It's still very much work in progress. But it's open source. And it's on GitHub.
 
 ---
 
