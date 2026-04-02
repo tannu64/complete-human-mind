@@ -1,0 +1,26 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF6347'}}}%%
+graph TD
+    AP["<b>ACTION POTENTIAL</b><br/>Section 3.2 | All-or-None"]
+
+    AP --> PHASES["<b>Phases</b>"]
+    AP --> REFR["<b>Refractory Periods</b>"]
+    AP --> PROP["<b>Propagation</b>"]
+    AP --> FIBER["<b>Fiber Types</b>"]
+
+    PHASES --> P1["1. Resting -70mV<br/>Nav closed, Kv closed"]
+    P1 --> P2["2. Threshold -55mV<br/>Nav open, positive feedback<br/>Point of no return"]
+    P2 --> P3["3. Depolarization to +30mV<br/>Na+ influx 500-fold<br/>Nav1.1/1.2/1.6 channels"]
+    P3 --> P4["4. Repolarization +30 to -70mV<br/>Nav INACTIVATE ball-chain<br/>Kv open, K+ efflux"]
+    P4 --> P5["5. Hyperpolarization -80mV<br/>Kv still open past rest"]
+    P5 --> P6["6. Return to Rest -70mV<br/>Kv close, Pump restores"]
+
+    REFR --> ABS["Absolute 1-2ms<br/>Nav inactivated<br/>Cannot reopen<br/>Ensures unidirectional"]
+    REFR --> REL["Relative 3-4ms<br/>Some Nav recovered<br/>Stronger stimulus needed<br/>Limits max ~500-1000 Hz"]
+
+    PROP --> UNMY["Unmyelinated<br/>Continuous conduction<br/>0.5-2 m/s<br/>Velocity proportional to<br/>square root diameter"]
+    PROP --> MY["Myelinated - Saltatory<br/>Jumps between Nodes<br/>Nav1.6 at 1200/um2<br/>3-120 m/s"]
+
+    FIBER --> AA["Aa 13-20um Heavy<br/>80-120 m/s Motor"]
+    FIBER --> AB["Ab 6-12um Moderate<br/>35-75 m/s Touch"]
+    FIBER --> AD["Ad 1-5um Light<br/>5-30 m/s Sharp pain"]
+    FIBER --> CF["C 0.2-1.5um None<br/>0.5-2 m/s Dull pain"]

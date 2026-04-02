@@ -1,0 +1,24 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00BFFF'}}}%%
+graph TD
+    NET["<b>LARGE-SCALE BRAIN NETWORKS</b><br/>Section 5.2"]
+
+    NET --> DMN["<b>Default Mode Network</b>"]
+    NET --> SN["<b>Salience Network</b>"]
+    NET --> CEN["<b>Central Executive Network</b>"]
+    NET --> ATT["<b>Attention Networks</b>"]
+
+    DMN --> DMN_N["Nodes: mPFC, PCC/Precuneus<br/>Angular gyrus, Lateral temporal<br/>Hippocampal formation"]
+    DMN --> DMN_F["Self-referential thought<br/>Autobiographical memory<br/>Future simulation<br/>Mind-wandering, Theory of Mind"]
+    DMN --> DMN_S["Subsystems:<br/>Medial temporal: Memory simulation<br/>dmPFC: Social cognition"]
+    DMN --> DMN_C["Clinical: Hyperactive in Depression<br/>Disrupted in ADHD, Early AD<br/>Amyloid deposits in DMN nodes"]
+
+    SN --> SN_N["Nodes: Anterior Insula<br/>Dorsal ACC<br/>Amygdala, Ventral striatum"]
+    SN --> SN_F["Detects salient stimuli<br/>Threat, Reward, Novelty"]
+    SN --> SN_SW["Anterior Insula = Switch<br/>Toggles DMN vs CEN<br/>Interoception integration"]
+
+    CEN --> CEN_N["Nodes: dlPFC<br/>Posterior parietal IPS<br/>Frontal eye fields"]
+    CEN --> CEN_F["Goal-directed behavior<br/>Working memory, Attention<br/>Cognitive flexibility"]
+    CEN --> CEN_A["Anti-correlated with DMN<br/>One active = other suppressed"]
+
+    ATT --> DAN["<b>Dorsal Attention DAN</b><br/>FEF + Superior parietal/IPS<br/>Top-down voluntary attention<br/>Generates attentional templates"]
+    ATT --> VAN["<b>Ventral Attention VAN</b><br/>Right TPJ + Right ventral frontal<br/>Bottom-up reorienting<br/>Circuit breaker for unexpected<br/>Right-lateralized: Neglect"]

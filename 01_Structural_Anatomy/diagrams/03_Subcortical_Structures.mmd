@@ -1,0 +1,46 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#32CD32','primaryColor':'#1a1a2e','primaryTextColor':'#fff'}}}%%
+graph TD
+    SUB["<b>SUBCORTICAL STRUCTURES</b><br/>Section 1.3"]
+
+    SUB --> THAL["<b>THALAMUS</b><br/>~60 nuclei, Relay station"]
+    SUB --> HYPO["<b>HYPOTHALAMUS</b><br/>~4g, Master homeostasis"]
+    SUB --> HIPP["<b>HIPPOCAMPUS</b><br/>Declarative memory"]
+    SUB --> AMYG["<b>AMYGDALA</b><br/>~13 nuclei, Emotion"]
+    SUB --> BG["<b>BASAL GANGLIA</b><br/>Action selection, Habits"]
+
+    THAL --> LGN["LGN - Visual to V1"]
+    THAL --> MGN["MGN - Auditory to A1"]
+    THAL --> VPL["VPL/VPM - Somatosensory to S1"]
+    THAL --> PULV["Pulvinar - Attention"]
+    THAL --> MD["Mediodorsal - to PFC"]
+    THAL --> ANUC["Anterior - Papez circuit"]
+    THAL --> RET["Reticular - Attentional gating"]
+
+    HYPO --> SCN["SCN - Circadian clock"]
+    HYPO --> PVN["PVN - Stress CRH<br/>Oxytocin, Vasopressin"]
+    HYPO --> ARC["Arcuate - Appetite<br/>NPY/AgRP vs POMC/CART"]
+    HYPO --> VMH["VMH - Satiety center"]
+    HYPO --> LH["Lateral Hypo - Hunger<br/>Orexin/Wakefulness"]
+    HYPO --> POA["Preoptic - Temperature<br/>Sleep, Sexual behavior"]
+
+    HIPP --> TRI["Trisynaptic Pathway"]
+    TRI --> EC["Entorhinal Cortex"]
+    EC -->|"Perforant path"| DG["Dentate Gyrus"]
+    DG -->|"Mossy fibers"| CA3["CA3"]
+    CA3 -->|"Schaffer collaterals"| CA1["CA1"]
+    CA1 --> SUBIC["Subiculum - back to EC"]
+    HIPP --> SPATIAL["Spatial Cells<br/>Place, Grid, HD, Border"]
+
+    AMYG --> BLA["BLA - Sensory input<br/>Emotional valence"]
+    AMYG --> CEA["CeA - Output<br/>Autonomic fear"]
+    AMYG --> MEDN["Medial - Pheromones<br/>Reproductive"]
+
+    BG --> STR["Striatum 95% MSNs"]
+    STR --> DSTR["Dorsal - Caudate + Putamen<br/>Motor/Cognitive"]
+    STR --> VSTR["Ventral - Nuc Accumbens<br/>Reward/Motivation"]
+    BG --> GP["Globus Pallidus<br/>GPi output, GPe indirect"]
+    BG --> STN["STN - DBS target<br/>Rapid action cancel"]
+    BG --> SNIG["Substantia Nigra<br/>SNc dopamine, SNr GABA"]
+
+    STR --> DIR["Direct D1 Pathway<br/>Cortex-Striatum-GPi-Thalamus<br/>Promotes movement"]
+    STR --> IND["Indirect D2 Pathway<br/>Cortex-Str-GPe-STN-GPi<br/>Suppresses movement"]

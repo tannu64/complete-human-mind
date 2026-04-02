@@ -1,0 +1,27 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00FF7F'}}}%%
+graph TD
+    GABA["<b>GABA & GLYCINE</b><br/>Section 4.2 | Primary Inhibitory"]
+
+    GABA --> GSYN["<b>GABA Synthesis</b><br/>Glutamate via GAD65/67<br/>Requires Vitamin B6<br/>Packaged by VGAT"]
+    GABA --> GABAR["<b>GABA Receptors</b>"]
+    GABA --> GMET["<b>GABA Metabolism</b><br/>GABA-T to succinate TCA<br/>Reuptake GAT-1, GAT-3"]
+    GABA --> GLYC["<b>Glycine</b>"]
+
+    GABAR --> GABAA["<b>GABA-A</b> Pentameric Cl- channel<br/>2a+2b+1g most common<br/>19 subunit genes<br/>Fast inhibition 10-30ms"]
+    GABAR --> GABAB["<b>GABA-B</b> Gi/Go GPCR<br/>Heterodimer B1+B2<br/>Pre: reduce Ca2+ release<br/>Post: GIRK K+ slow IPSP"]
+
+    GABAA --> SITES["<b>Binding Sites</b>"]
+    SITES --> GBENZ["Benzodiazepine site<br/>a/g interface<br/>Positive allosteric mod"]
+    SITES --> GBARB["Barbiturate site"]
+    SITES --> GNST["Neurosteroid site"]
+    SITES --> GETH["Ethanol site<br/>d-containing receptors"]
+
+    GABAA --> GDEV["<b>Developmental Switch</b><br/>Immature: GABA is EXCITATORY<br/>High Cl- via NKCC1<br/>Mature: KCC2 lowers Cl-<br/>GABA becomes inhibitory"]
+
+    GABAB --> BACL["Baclofen = agonist<br/>Muscle relaxant"]
+
+    GMET --> TIAG["Tiagabine inhibits GAT-1<br/>Vigabatrin inhibits GABA-T<br/>Both = anticonvulsants"]
+
+    GLYC --> GLYCR["Glycine Receptor<br/>Pentameric Cl- channel<br/>Spinal cord & brainstem"]
+    GLYC --> GLYCN["NMDA co-agonist<br/>with D-serine"]
+    GLYC --> STRY["Strychnine = antagonist<br/>Disinhibition, convulsions"]

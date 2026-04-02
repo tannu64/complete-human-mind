@@ -1,0 +1,46 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00BFFF'}}}%%
+graph TD
+    SPEC["<b>SPECIALIZED MEMORY PHENOMENA</b><br/>Chapter 7.6"]
+
+    SPEC --> SPAT["<b>Spatial Memory & Navigation</b><br/>Cognitive Map"]
+    SPEC --> AGE["<b>Memory & Aging</b>"]
+
+    %% --- Spatial ---
+    SPAT --> PLACE["<b>Place Cells</b><br/>O'Keefe 1971<br/>CA1/CA3 pyramidal cells<br/>Fire at specific locations<br/>Remap across environments"]
+    SPAT --> GRID["<b>Grid Cells</b><br/>Moser & Moser 2005<br/>Entorhinal cortex<br/>Hexagonal firing pattern<br/>Multiple spatial scales"]
+    SPAT --> HD["<b>Head Direction Cells</b><br/>Fire for specific head direction<br/>Independent of location<br/>Presubiculum, anterior thalamus"]
+    SPAT --> BORD["<b>Border Cells</b><br/>Fire along boundaries<br/>Medial entorhinal cortex<br/>Subiculum"]
+
+    PLACE --> COGMAP["Together form<br/><b>Cognitive Map</b><br/>O'Keefe & Nadel 1978<br/>Nobel Prize 2014"]
+    GRID --> COGMAP
+    HD --> COGMAP
+    BORD --> COGMAP
+
+    COGMAP --> TAXI["London taxi drivers:<br/>Enlarged posterior hippocampi"]
+
+    %% --- Aging ---
+    AGE --> DECLINE["<b>Declines With Age</b>"]
+    AGE --> PRES["<b>Preserved With Age</b>"]
+    AGE --> COMP["<b>Compensatory Mechanisms</b>"]
+
+    DECLINE --> D1["Episodic Memory<br/>Hippocampal volume<br/>-1-2% per year after 50"]
+    DECLINE --> D2["Source Memory<br/>PFC-dependent<br/>Frontal atrophy"]
+    DECLINE --> D3["Processing Speed<br/>White matter<br/>integrity decline"]
+
+    PRES --> P1["Semantic Memory"]
+    PRES --> P2["Procedural Memory"]
+    PRES --> P3["Priming"]
+
+    COMP --> HAROLD["HAROLD Model<br/>Bilateral PFC recruitment<br/>Compensates for<br/>unilateral decline"]
+
+    classDef header fill:#2c3e50,stroke:#1a252f,color:#fff,font-size:16px
+    classDef spatial fill:#2980b9,stroke:#1f6898,color:#fff
+    classDef aging fill:#e67e22,stroke:#b86415,color:#fff
+    classDef detail fill:#ecf0f1,stroke:#bdc3c7,color:#2c3e50
+    classDef highlight fill:#1abc9c,stroke:#148f77,color:#fff
+
+    class SPEC header
+    class SPAT,PLACE,GRID,HD,BORD spatial
+    class AGE,DECLINE,PRES,COMP aging
+    class D1,D2,D3,P1,P2,P3,HAROLD detail
+    class COGMAP,TAXI highlight

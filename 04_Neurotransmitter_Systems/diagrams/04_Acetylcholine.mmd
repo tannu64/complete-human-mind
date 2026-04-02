@@ -1,0 +1,27 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#DA70D6'}}}%%
+graph TD
+    ACH["<b>ACETYLCHOLINE</b><br/>Section 4.4"]
+
+    ACH --> ACHSYN["<b>Synthesis</b><br/>Choline + Acetyl-CoA<br/>by ChAT, Packaged VAChT"]
+    ACH --> SRC["<b>CNS Sources</b>"]
+    ACH --> REC["<b>Receptors</b>"]
+    ACH --> TERM["<b>Termination</b><br/>AChE in cleft<br/>25,000 ACh/sec/molecule<br/>Fastest enzyme known"]
+
+    SRC --> BF["Basal Forebrain<br/>Nucleus basalis Meynert<br/>to Cortex & Hippocampus<br/>Attention, Learning<br/>Degenerates in AD"]
+    SRC --> PPT["PPT/LDT Brainstem<br/>to Thalamus<br/>REM sleep, Arousal"]
+    SRC --> TAN["Striatal Interneurons<br/>TANs 1-2% of striatum<br/>Pause at reward cues"]
+
+    REC --> NIC["<b>Nicotinic nAChR</b><br/>Pentameric cation channel<br/>Na+/K+/Ca2+"]
+    REC --> MUSC["<b>Muscarinic mAChR</b><br/>GPCRs, 5 subtypes"]
+
+    NIC --> A4B2["a4b2: High affinity<br/>Widespread<br/>Nicotine addiction target"]
+    NIC --> A7["a7: High Ca2+ perm<br/>Hippocampus, Cortex<br/>Rapid desensitization"]
+    NIC --> NMJ["Muscle-type a1-2-b-d-e<br/>Neuromuscular junction"]
+
+    MUSC --> M1["M1 Gq: Cortex, Hippo<br/>Memory, Cognitive enhancement"]
+    MUSC --> M2["M2 Gi: Heart vagal<br/>Autoreceptor"]
+    MUSC --> M3["M3 Gq: Smooth muscle<br/>Glands"]
+    MUSC --> M4["M4 Gi: Striatum<br/>Modulates DA signaling"]
+
+    TERM --> DONEP["Donepezil, Rivastigmine<br/>AChE inhibitors for AD"]
+    TERM --> NERVE["Organophosphates Sarin<br/>Irreversible AChE inhibition<br/>Cholinergic crisis"]

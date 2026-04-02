@@ -1,0 +1,18 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00FF7F'}}}%%
+graph TD
+    FRONT["<b>FRONTIER NEUROSCIENCE</b><br/>Sections 17.1-17.3"]
+    FRONT --> CONN["<b>Connectomics</b>"]
+    FRONT --> ORG["<b>Brain Organoids</b>"]
+    FRONT --> BCI["<b>Brain-Computer Interfaces</b>"]
+
+    CONN --> MICRO_C["Microscale EM:<br/>C.elegans 302 neurons 1986<br/>Drosophila adult 139K neurons 2024<br/>Human 1mm3: 57K neurons 1.4PB"]
+    CONN --> MESO["Mesoscale:<br/>Allen Mouse Connectivity Atlas<br/>Human Connectome Project 1200 adults<br/>360 cortical areas per hemisphere"]
+    CONN --> DYN_C["Dynamic Connectomics<br/>Changes with learning<br/>Varies across individuals"]
+
+    ORG --> IPSC["iPSC to 3D neural tissue<br/>Lancaster & Knoblich 2013<br/>Region-specific: Cortical, Midbrain"]
+    ORG --> MODEL["Model disorders:<br/>Microcephaly, Zika virus<br/>Autism SHANK3, Timothy"]
+    ORG --> ASSEMB["Assembloids:<br/>Cortical + Subpallial<br/>Model interneuron migration"]
+
+    BCI --> INVAS["Invasive:<br/>Utah Array BrainGate<br/>Neuralink 1024 electrodes 2024<br/>Stentrode endovascular ALS"]
+    BCI --> NONINV["Non-Invasive:<br/>EEG P300 spellers 5-25 bits/min<br/>fNIRS wearable portable"]
+    BCI --> STIM["Stimulation BCIs:<br/>Cochlear implants 1M+ recipients<br/>DBS: PD, Tremor, Depression<br/>Retinal/Cortical visual prostheses"]

@@ -1,0 +1,22 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#32CD32'}}}%%
+graph TD
+    AUD["<b>AUDITION</b><br/>Section 6.3"]
+
+    AUD --> PERI["<b>Peripheral Processing</b>"]
+    AUD --> CAUD["<b>Central Auditory Pathway</b>"]
+
+    PERI --> OUTER["Outer Ear<br/>Pinna: Vertical localization<br/>Canal resonance 2-5kHz"]
+    PERI --> MIDDLE["Middle Ear<br/>Tympanic-Malleus-Incus-Stapes<br/>22x pressure amplification<br/>Acoustic reflex protection"]
+    PERI --> COCH["<b>Cochlea</b><br/>Fluid-filled 2.5 turns<br/>Tonotopic basilar membrane<br/>Base=High freq, Apex=Low freq"]
+
+    COCH --> IHC["IHC ~3500 Sensory<br/>K+ influx 125mV driving force<br/>Depolarize-Ca2+-Glutamate<br/>to auditory nerve"]
+    COCH --> OHC["OHC ~12000 Amplifiers<br/>Prestin motor protein<br/>Cochlear amplifier 40-60dB<br/>Damage = Hearing loss"]
+
+    CAUD --> CN["Cochlear Nucleus<br/>Parallel processing streams"]
+    CN --> SOC["Superior Olivary Complex<br/>First binaural integration<br/>MSO: Interaural time diff<br/>LSO: Interaural level diff"]
+    SOC --> IC["Inferior Colliculus<br/>Integration hub<br/>Tonotopic, Audiomotor"]
+    IC --> MGN["MGN Thalamus"]
+    MGN --> A1["A1 Primary Auditory<br/>Heschl's Gyrus, Tonotopic"]
+
+    A1 --> AVSTR["Ventral Stream<br/>Anterior temporal<br/>Sound ID, Speech"]
+    A1 --> ADSTR["Dorsal Stream<br/>Parietal<br/>Sound localization<br/>Sensorimotor speech"]

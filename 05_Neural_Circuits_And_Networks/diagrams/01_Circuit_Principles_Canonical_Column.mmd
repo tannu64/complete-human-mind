@@ -1,0 +1,20 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFD700'}}}%%
+graph TD
+    CIRC["<b>NEURAL CIRCUIT PRINCIPLES</b><br/>Section 5.1"]
+
+    CIRC --> PRINC["<b>Key Principles</b>"]
+    CIRC --> COLUMN["<b>Canonical Cortical Column</b><br/>300-600 um diameter"]
+
+    PRINC --> CONV["Convergence<br/>Many inputs to 1 neuron<br/>5K-30K synapses per pyramidal"]
+    PRINC --> DIV["Divergence<br/>1 neuron to many targets<br/>CA3: 30K Schaffer collaterals"]
+    PRINC --> RECUR["Recurrence<br/>Feedback loops<br/>Working memory, Oscillations"]
+    PRINC --> LATIN["Lateral Inhibition<br/>Contrast enhancement<br/>Surround inhibition"]
+    PRINC --> FFI["Feedforward Inhibition<br/>Rapid precise timing<br/>Narrows integration window"]
+    PRINC --> TOPD["Top-Down Modulation<br/>Higher areas regulate lower"]
+
+    COLUMN --> C1["Thalamus input to Layer IV<br/>Stellate cells + Interneurons"]
+    C1 --> C2["Layer IV excites Layer II/III<br/>Corticocortical output"]
+    C2 --> C3["Layer II/III excites Layer V<br/>Subcortical output<br/>Corticospinal, Striatal"]
+    C3 --> C4["Layer V excites Layer VI<br/>Corticothalamic feedback"]
+
+    COLUMN --> DISIN["<b>Disinhibitory Motif</b><br/>VIP+ inhibits SST+<br/>SST+ inhibits Pyramidal dendrites<br/>VIP activation = Disinhibition<br/>= Top-down attentional gain"]

@@ -1,0 +1,44 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFA500','primaryColor':'#1a1a2e','primaryTextColor':'#fff'}}}%%
+graph TD
+    SUPP["<b>SUPPORT SYSTEMS</b><br/>Sections 1.5, 1.6, 1.7"]
+
+    SUPP --> VENT["<b>VENTRICULAR SYSTEM</b>"]
+    SUPP --> MEN["<b>MENINGES</b>"]
+    SUPP --> WM["<b>WHITE MATTER TRACTS</b>"]
+    SUPP --> CYTO["<b>CYTOARCHITECTURE</b><br/>6 Cortical Layers"]
+
+    VENT --> LV["Lateral Ventricles<br/>Paired, C-shaped"]
+    VENT --> V3["3rd Ventricle<br/>Between thalami"]
+    VENT --> V4["4th Ventricle<br/>Pons-Cerebellum-Medulla"]
+    VENT --> CSF["CSF Production<br/>Choroid plexus, 500mL/day<br/>Buoyancy 1400g to 50g"]
+
+    LV -->|"Foramina of Monro"| V3
+    V3 -->|"Aqueduct of Sylvius"| V4
+    V4 -->|"Luschka & Magendie"| SAS["Subarachnoid space<br/>Reabsorbed at<br/>arachnoid granulations"]
+
+    MEN --> DURA["Dura Mater - Outer<br/>Tough, Fibrous<br/>Falx cerebri, Tentorium"]
+    MEN --> ARACH["Arachnoid Mater - Middle<br/>Avascular, Trabeculae"]
+    MEN --> PIA["Pia Mater - Inner<br/>Thin, Vascularized<br/>Adheres to brain surface"]
+
+    WM --> COMM["<b>Commissural</b><br/>Interhemispheric"]
+    WM --> ASSOC["<b>Association</b><br/>Intrahemispheric"]
+    WM --> PROJ["<b>Projection</b><br/>Cortex to Subcortical"]
+
+    COMM --> CCAL["Corpus Callosum<br/>200-300M fibers"]
+    COMM --> ACOMM["Anterior Commissure<br/>Temporal & Olfactory"]
+
+    ASSOC --> ARC["Arcuate Fasciculus<br/>Broca to Wernicke"]
+    ASSOC --> ILF["Inferior Longitudinal<br/>Visual object recognition"]
+    ASSOC --> UNC["Uncinate Fasciculus<br/>Emotional memory labeling"]
+    ASSOC --> CING2["Cingulum<br/>Limbic connections"]
+
+    PROJ --> IC["Internal Capsule<br/>Major highway"]
+    PROJ --> CR["Corona Radiata<br/>Fan-shaped projection"]
+    PROJ --> CST["Corticospinal Tract<br/>M1 to Spinal motor neurons"]
+
+    CYTO --> L1["Layer I - Molecular<br/>Dendritic integration"]
+    CYTO --> L23["Layer II-III - External<br/>Corticocortical I/O"]
+    CYTO --> L4["Layer IV - Internal Granular<br/>Thalamocortical input"]
+    CYTO --> L5["Layer V - Internal Pyramidal<br/>Subcortical output, Betz cells"]
+    CYTO --> L6["Layer VI - Polymorphic<br/>Corticothalamic feedback"]
+    CYTO --> BROD["Brodmann 52 areas<br/>HCP 180-area map"]

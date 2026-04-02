@@ -1,0 +1,27 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00BFFF'}}}%%
+graph TD
+    VIS["<b>VISION</b><br/>Section 6.2 | 30% cortex devoted"]
+
+    VIS --> RET["<b>Retinal Processing</b>"]
+    VIS --> CENT["<b>Central Visual Processing</b>"]
+
+    RET --> PHOTO["<b>Photoreceptors</b>"]
+    PHOTO --> RODS["Rods ~120M<br/>Single-photon sensitivity<br/>Scotopic, Periphery<br/>Peak 498nm"]
+    PHOTO --> CONES["Cones ~6M<br/>High acuity, Color<br/>S 420nm, M 530nm, L 560nm<br/>Fovea: 200K/mm2"]
+
+    RET --> PTRANS["<b>Phototransduction</b><br/>Photon-Rhodopsin-Transducin<br/>PDE6-cGMP decrease<br/>CNG close-Hyperpolarize<br/>Reduce glutamate"]
+
+    RET --> RCIRC["Photoreceptors to Bipolar<br/>ON: mGluR6 depolarize to light<br/>OFF: iGluR depolarize to dark<br/>to RGCs"]
+
+    RET --> RGC["<b>RGC Types ~30+</b>"]
+    RGC --> MIDG["Midget P cells 80%<br/>Small RF, Color, Detail"]
+    RGC --> PARA["Parasol M cells 10%<br/>Large RF, Motion"]
+    RGC --> BIST["Bistratified K cells<br/>Blue-Yellow"]
+    RGC --> IPRGC["ipRGCs Melanopsin<br/>Circadian SCN<br/>Pupil reflex"]
+
+    CENT --> LGN["LGN 6 layers<br/>M 1-2: Motion, Contrast<br/>P 3-6: Color, Detail<br/>K: Blue-Yellow"]
+    CENT --> V1["V1 Primary Visual<br/>Orientation columns<br/>Ocular dominance columns<br/>Blobs color, Hypercolumns"]
+    CENT --> EXT["Extrastriate V2-V5<br/>V2 Borders, V4 Color<br/>V5/MT Motion, MST Optic flow"]
+
+    CENT --> VSTR["Ventral Stream What<br/>V1-V2-V4-IT cortex<br/>FFA faces, PPA places<br/>VWFA reading"]
+    CENT --> DSTR["Dorsal Stream Where/How<br/>V1-V3-V5-PPC<br/>Spatial location, Visuomotor<br/>Optic ataxia if damaged"]

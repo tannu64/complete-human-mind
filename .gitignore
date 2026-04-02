@@ -1,0 +1,21 @@
+# LaTeX files
+*.tex
+*.aux
+*.log
+*.out
+*.toc
+
+# Python files (not needed for content repo)
+*.py
+__pycache__/
+*.pyc
+
+# IDE/System files
+.qodo/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Build outputs (keep only PDFs)
+*.synctex.gz

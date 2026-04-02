@@ -1,0 +1,48 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFA500'}}}%%
+graph TD
+    CON["<b>MEMORY CONSOLIDATION</b><br/>Chapter 7.4"]
+
+    CON --> SYN["<b>Synaptic Consolidation</b><br/>Minutes to Hours"]
+    CON --> SYS["<b>Systems Consolidation</b><br/>Weeks to Years"]
+    CON --> SLP["<b>Sleep & Consolidation</b>"]
+
+    %% --- Synaptic ---
+    SYN --> S1["E-LTP to L-LTP transition"]
+    SYN --> S2["New protein synthesis"]
+    SYN --> S3["Structural remodeling"]
+    SYN --> S4["Epigenetic changes<br/>DNA methylation<br/>Histone acetylation"]
+
+    %% --- Systems ---
+    SYS --> SCT["<b>Standard Consolidation Theory</b><br/>Squire & Alvarez"]
+    SYS --> MTT["<b>Multiple Trace Theory</b><br/>Nadel & Moscovitch"]
+
+    SCT --> SCT1["Hippocampus to Neocortex<br/>gradual transfer"]
+    SCT --> SCT2["Cortical-cortical connections<br/>strengthen via sleep dialogue"]
+    SCT --> SCT3["Evidence: Temporally graded<br/>retrograde amnesia"]
+
+    MTT --> MTT1["New hippocampal trace<br/>each retrieval"]
+    MTT --> MTT2["Older memories = more traces<br/>= more resistant"]
+    MTT --> MTT3["Gist to cortex but<br/>vivid detail needs hippocampus"]
+    MTT --> MTT4["Evidence: Flat retrograde<br/>amnesia for episodic detail"]
+
+    %% --- Sleep ---
+    SLP --> NREM["<b>NREM Slow-Wave Sleep</b>"]
+    SLP --> REM["<b>REM Sleep</b><br/>Memory integration<br/>Emotional processing<br/>Creative insight"]
+
+    NREM --> SO["Slow Oscillations<br/>less than 1 Hz - Orchestrator"]
+    NREM --> SWR["Sharp-Wave Ripples<br/>100-250 Hz<br/>Compressed replay 20x speed"]
+    NREM --> SPIN["Sleep Spindles<br/>12-16 Hz, 0.5-2s bursts<br/>Thalamic reticular nucleus"]
+
+    SO --> COORD["<b>3-Way Coordination</b><br/>SO up-state to Spindle to nested SWR<br/>Reactivates hippocampal memories<br/>Ca2+ influx to cortical potentiation"]
+
+    classDef header fill:#2c3e50,stroke:#1a252f,color:#fff,font-size:16px
+    classDef synaptic fill:#e67e22,stroke:#b86415,color:#fff
+    classDef systems fill:#2980b9,stroke:#1f6898,color:#fff
+    classDef sleep fill:#8e44ad,stroke:#6c3483,color:#fff
+    classDef detail fill:#ecf0f1,stroke:#bdc3c7,color:#2c3e50
+
+    class CON header
+    class SYN,S1,S2,S3,S4 synaptic
+    class SYS,SCT,MTT systems
+    class SLP,NREM,REM sleep
+    class SCT1,SCT2,SCT3,MTT1,MTT2,MTT3,MTT4,SO,SWR,SPIN,COORD detail

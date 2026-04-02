@@ -1,0 +1,16 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00BFFF'}}}%%
+graph TD
+    CBS["<b>CEREBRAL BLOOD SUPPLY</b><br/>Sections 13.4-13.6"]
+    CBS --> COW["<b>Circle of Willis</b>"]
+    CBS --> REG["<b>CBF Regulation</b>"]
+    CBS --> VULN["<b>Vulnerability</b>"]
+
+    COW --> ANT["Anterior 70% CBF<br/>ACA: Medial frontal leg/foot<br/>MCA: Lateral face/arm language<br/>Ant Communicating: Aneurysm site"]
+    COW --> POST_C["Posterior 30% CBF<br/>PCA: Occipital, Thalamus<br/>PICA: Lateral medulla Wallenberg<br/>Only 25% complete circle"]
+
+    REG --> AUTO["Autoregulation<br/>MAP 60-150 mmHg<br/>Below 60 = Ischemia<br/>Above 150 = Edema"]
+    REG --> CO2R["CO2 most potent vasodilator<br/>4% CBF per mmHg PaCO2"]
+    REG --> NVC["Neurovascular Coupling<br/>Neural activity to CBF 1-5s<br/>Neuronal: nNOS-NO-Dilate<br/>Astrocytic: mGluR5-Ca-PGE2<br/>BOLD signal = Synaptic input"]
+
+    VULN --> STROKE["Ischemic Stroke<br/>Core less than 10mL: Necrosis minutes<br/>Penumbra 10-25mL: Salvageable<br/>tPA less than 4.5hrs, Thrombectomy less than 24hrs"]
+    VULN --> EXCITOX["Excitotoxic Cascade<br/>Glutamate-NMDA-Ca2+ overload<br/>Mitochondrial dysfunction<br/>Free radicals-Cell death"]

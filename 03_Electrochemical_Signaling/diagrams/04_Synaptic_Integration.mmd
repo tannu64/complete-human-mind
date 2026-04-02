@@ -1,0 +1,19 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#DA70D6'}}}%%
+graph TD
+    INT["<b>SYNAPTIC INTEGRATION</b><br/>Section 3.4"]
+
+    INT --> PASS["<b>Passive Properties</b>"]
+    INT --> ACT["<b>Active Dendritic Properties</b>"]
+    INT --> MODES["<b>Integration Modes</b>"]
+
+    PASS --> LAMBDA["Length Constant lambda<br/>Signal decays to 37%<br/>Larger diameter = longer"]
+    PASS --> TAU["Time Constant tau=Rm x Cm<br/>How fast Vm changes<br/>Typical 10-50 ms"]
+    PASS --> CABLE["Cable Properties<br/>Dendrites = leaky cables<br/>Distal synapses weaker<br/>unless amplified"]
+
+    ACT --> NASPIKE["Na+ Spikes bAPs<br/>Backpropagate soma to dendrites<br/>Coincidence detector for LTP"]
+    ACT --> CASPIKE["Ca2+ Spikes<br/>Apical dendrite tuft Layer V<br/>Trigger burst firing<br/>Top-down gated"]
+    ACT --> NMDASPIKE["NMDA Spikes<br/>Voltage + ligand gated<br/>Supralinear summation<br/>in thin dendrites"]
+
+    MODES --> LINEAR["Linear Summation<br/>Different locations<br/>Sum linearly at soma"]
+    MODES --> SUBLIN["Sublinear<br/>Nearby synapses<br/>Reduced driving force"]
+    MODES --> SUPLIN["Supralinear<br/>Clustered inputs<br/>Trigger dendritic spikes<br/>Dendritic computation"]

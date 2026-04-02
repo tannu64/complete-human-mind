@@ -1,0 +1,32 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#DA70D6'}}}%%
+graph TD
+    RET["<b>RETRIEVAL & RECONSOLIDATION</b><br/>Chapter 7.5"]
+
+    RET --> RETR["<b>Retrieval</b>"]
+    RET --> RECON["<b>Reconsolidation</b>"]
+
+    %% --- Retrieval ---
+    RETR --> CUE["Retrieval Cues activate<br/>Hippocampal Pattern Completion"]
+    CUE --> REINST["Cortical Reinstatement<br/>Same ensemble as encoding<br/>Shown by fMRI pattern analysis"]
+    RETR --> ESP["Encoding Specificity Principle<br/>Overlap between encoding<br/>and retrieval conditions"]
+    RETR --> RIF["Retrieval-Induced Forgetting<br/>Retrieving some items<br/>suppresses related items<br/>Lateral PFC inhibition"]
+
+    %% --- Reconsolidation ---
+    RECON --> LABILE["Reactivated memory<br/>becomes LABILE<br/>5-6 hour window"]
+    LABILE --> RESTAB["Requires new protein<br/>synthesis to restabilize"]
+
+    LABILE --> DISRUPT["<b>Disrupting Reconsolidation</b><br/>Protein synthesis inhibitors<br/>Propranolol for emotional memories<br/>Weakens traumatic memories"]
+    LABILE --> UPDATE["<b>Updating Reconsolidation</b><br/>New info during window<br/>modifies original trace<br/>Therapy for PTSD & Phobias"]
+
+    RECON --> BOUND["<b>Boundary Conditions</b>"]
+    BOUND --> PE["Prediction Error required<br/>Mismatch between expected<br/>and actual experience"]
+    BOUND --> MATCH["Perfect match = memory<br/>stays consolidated<br/>No destabilization"]
+
+    classDef header fill:#2c3e50,stroke:#1a252f,color:#fff,font-size:16px
+    classDef retrieval fill:#27ae60,stroke:#1e8449,color:#fff
+    classDef recon fill:#e74c3c,stroke:#b83229,color:#fff
+    classDef detail fill:#ecf0f1,stroke:#bdc3c7,color:#2c3e50
+
+    class RET header
+    class RETR,CUE,REINST,ESP,RIF retrieval
+    class RECON,LABILE,RESTAB,DISRUPT,UPDATE,BOUND,PE,MATCH recon

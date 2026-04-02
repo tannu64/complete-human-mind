@@ -1,0 +1,26 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF6347'}}}%%
+graph TD
+    SOM["<b>SOMATOSENSATION</b><br/>Section 6.4"]
+
+    SOM --> MECH["<b>Mechanoreceptors</b>"]
+    SOM --> NOCI["<b>Nociceptors - Pain</b>"]
+    SOM --> PATH["<b>Central Pathways</b>"]
+    SOM --> PMOD["<b>Pain Modulation</b>"]
+
+    MECH --> MEISS["Meissner: Light touch<br/>Rapid adapt, Small RF"]
+    MECH --> MERK["Merkel: Pressure, Form<br/>Slow adapt, Small RF"]
+    MECH --> PACI["Pacinian: Vibration<br/>Very rapid, Large RF"]
+    MECH --> RUFF["Ruffini: Skin stretch<br/>Slow adapt, Large RF"]
+
+    NOCI --> ADELT["Ad Nociceptors<br/>Myelinated, Fast sharp pain"]
+    NOCI --> CFIB["C-fiber Nociceptors<br/>Unmyelinated, Slow burning"]
+    NOCI --> SENS["Key Sensors:<br/>TRPV1: Capsaicin, Heat >43C<br/>TRPM8: Menthol, Cold <25C<br/>TRPA1: Irritants<br/>Piezo2: Mechanical"]
+
+    PATH --> DCML["<b>DCML Pathway</b><br/>Fine touch, Proprioception<br/>Dorsal columns to Medulla<br/>Decussate to VPL thal to S1"]
+    PATH --> ANTLAT["<b>Anterolateral Pathway</b><br/>Pain, Temperature<br/>Dorsal horn decussate<br/>Spinothalamic to VPL/Insula"]
+
+    PATH --> S1["S1 Somatotopic<br/>BA3a Proprioception<br/>BA3b Cutaneous<br/>BA1 Texture, BA2 Shape<br/>Homunculus: Hands, Lips huge"]
+
+    PMOD --> PAG["PAG descending inhibition<br/>to Raphe magnus 5-HT<br/>and LC NE"]
+    PMOD --> GATE["Gate Control Theory<br/>Ab input closes gate<br/>on C-fiber pain"]
+    PMOD --> ENDOP["Endogenous Opioids<br/>Endorphins, Enkephalins<br/>in dorsal horn"]

@@ -1,0 +1,34 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00FF7F'}}}%%
+graph TD
+    GLIA["<b>GLIAL CELLS</b><br/>Section 2.2 - ~85 Billion, Half of Brain Cells"]
+
+    GLIA --> ASTRO["<b>Astrocytes</b><br/>Most abundant CNS glia<br/>Contact ~2M synapses each"]
+    GLIA --> OLIGO["<b>Oligodendrocytes</b><br/>CNS Myelination"]
+    GLIA --> MICRO["<b>Microglia</b><br/>Brain immune cells<br/>5-12% of brain cells"]
+    GLIA --> EPEN["<b>Ependymal Cells</b><br/>Line ventricles"]
+    GLIA --> PNS_G["<b>PNS Glia</b>"]
+
+    ASTRO --> MET["Metabolic Support<br/>Lactate shuttle ANLS<br/>Glucose to Lactate for neurons"]
+    ASTRO --> NTR["NT Recycling<br/>Clear glutamate EAAT1/2<br/>Glutamate-Glutamine cycle<br/>Prevents excitotoxicity"]
+    ASTRO --> ION["Ion Homeostasis<br/>K+ buffering Kir4.1<br/>Gap junction networks"]
+    ASTRO --> BBB["BBB Maintenance<br/>Endfeet cover 99%<br/>vasculature"]
+    ASTRO --> TRI["Tripartite Synapse<br/>Ca2+ waves<br/>Gliotransmitters:<br/>Glutamate, D-serine, ATP"]
+    ASTRO --> SYNF["Synapse Formation<br/>Thrombospondins<br/>Complement pruning C1q/C3"]
+
+    OLIGO --> MYELF["Myelin Formation<br/>Each wraps up to 40 axons"]
+    OLIGO --> METAX["Metabolic Support<br/>Lactate via MCT1"]
+    OLIGO --> OPC["OPCs / NG2 Glia<br/>5-8% CNS cells<br/>New oligos throughout life<br/>Receive synaptic input"]
+
+    MICRO --> REST["Surveilling State<br/>Ramified, motile processes<br/>Sample synapses every hrs"]
+    MICRO --> ACT["Activated State<br/>Amoeboid morphology<br/>TNF-a, IL-1b, IL-6, ROS<br/>Phagocytose debris"]
+    MICRO --> PRUN["Synaptic Pruning<br/>C1q-C3-CR3 pathway<br/>Development & plasticity"]
+    MICRO --> NEURG["Neurogenesis Regulation<br/>Hippocampal adult neurogenesis"]
+    MICRO --> NINF["Neuroinflammation<br/>Chronic activation in<br/>AD, PD, ALS"]
+
+    EPEN --> CILIA["Ciliated Cells<br/>Circulate CSF"]
+    EPEN --> CHPL["Choroid Plexus<br/>Blood-CSF barrier<br/>Secrete CSF"]
+    EPEN --> TANY["Tanycytes<br/>3rd ventricle floor<br/>Sense CSF composition"]
+
+    PNS_G --> SCHW["Schwann Cells<br/>Myelinating: 1 cell/internode<br/>Remak: Ensheath C-fibers"]
+    PNS_G --> REGEN["Regeneration Support<br/>Bands of Bungner<br/>Absent in CNS: Nogo-A, MAG"]
+    PNS_G --> SAT["Satellite Glial Cells<br/>Surround DRG/autonomic somas<br/>Chronic pain role"]

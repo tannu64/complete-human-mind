@@ -1,0 +1,22 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF6347'}}}%%
+graph TD
+    DS["<b>DRIVES & STRESS RESPONSE</b><br/>Sections 9.5, 9.6"]
+
+    DS --> HUNGER["<b>Hunger/Feeding</b>"]
+    DS --> THERM["<b>Thermoregulation</b><br/>Preoptic area warm/cold<br/>Fever: IL-1b PGE2"]
+    DS --> THIRST["<b>Thirst</b><br/>SFO & OVLT no BBB<br/>Detect osmolality<br/>Predictive inhibition"]
+    DS --> STRESS["<b>Stress Response</b>"]
+
+    HUNGER --> ARC["Arcuate Nucleus<br/>AgRP/NPY: Hunger<br/>POMC/CART: Satiety<br/>Ghrelin vs Leptin/Insulin"]
+    HUNGER --> LHY["Lateral Hypothalamus<br/>Orexin + MCH neurons<br/>Feeding & Arousal<br/>Projects to VTA reward"]
+    HUNGER --> VMH2["VMH: Satiety center<br/>Lesion = Hyperphagia"]
+
+    STRESS --> SAM["<b>SAM Axis - Seconds</b><br/>Amygdala-Hypothalamus<br/>Sympathetic activation<br/>NE + Epinephrine<br/>Fight or Flight"]
+    STRESS --> HPA["<b>HPA Axis - Minutes</b><br/>PVN CRH to Pituitary<br/>ACTH to Adrenal<br/>Cortisol release"]
+
+    HPA --> CORT_BRAIN["<b>Cortisol on Brain</b>"]
+    CORT_BRAIN --> HIP_C["Hippocampus: Acute=enhance<br/>Chronic=CA3 retraction<br/>Volume decrease, Memory impair"]
+    CORT_BRAIN --> AMG_C["Amygdala: Chronic=hypertrophy<br/>Increased anxiety"]
+    CORT_BRAIN --> PFC_C["PFC: Chronic=retraction<br/>Decreased WM, Executive"]
+
+    STRESS --> RESIL["<b>Resilience</b><br/>DHEA & NPY buffer cortisol<br/>mPFC top-down regulation<br/>Exercise, Social support<br/>Vagal tone"]

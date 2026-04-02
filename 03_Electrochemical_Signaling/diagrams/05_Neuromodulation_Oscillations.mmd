@@ -1,0 +1,28 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#32CD32'}}}%%
+graph TD
+    NMO["<b>NEUROMODULATION & OSCILLATIONS</b><br/>Sections 3.5, 3.6"]
+
+    NMO --> NMOD["<b>Neuromodulation</b><br/>Volume Transmission"]
+    NMO --> OSC["<b>Neural Oscillations</b>"]
+
+    NMOD --> DA["Dopamine - VTA, SNc<br/>Reward, Motivation, Motor"]
+    NMOD --> SER["Serotonin - Raphe<br/>Mood, Impulse, Satiety"]
+    NMOD --> NE["Norepinephrine - LC<br/>Arousal, Attention, Stress"]
+    NMOD --> ACH["Acetylcholine - Basal FB<br/>Attention, Learning, REM"]
+    NMOD --> HIST["Histamine - TMN<br/>Wakefulness"]
+
+    NMOD --> EFFECTS["<b>Modulatory Effects</b>"]
+    EFFECTS --> EFF1["Alter intrinsic excitability"]
+    EFFECTS --> EFF2["Change synaptic strength"]
+    EFFECTS --> EFF3["Shift plasticity thresholds"]
+    EFFECTS --> EFF4["Modify network oscillations"]
+
+    OSC --> DELTA["Delta 0.5-4 Hz<br/>Deep sleep N3"]
+    OSC --> THETA["Theta 4-8 Hz<br/>Memory encoding, Navigation"]
+    OSC --> ALPHA["Alpha 8-13 Hz<br/>Relaxed wakefulness"]
+    OSC --> BETA["Beta 13-30 Hz<br/>Active thinking, Motor"]
+    OSC --> GAMMA["Gamma 30-100 Hz<br/>Perception, Binding, WM"]
+    OSC --> SWR["Sharp-Wave Ripples 100-250 Hz<br/>Memory replay in sleep"]
+
+    OSC --> MECH["<b>Generation Mechanism</b><br/>E-I interactions<br/>PV+ interneurons for gamma PING<br/>T-type Ca2+ thalamic for spindles"]
+    OSC --> CFC["<b>Cross-Frequency Coupling</b><br/>Theta-gamma coupling<br/>Each theta cycle packages<br/>distinct WM items"]

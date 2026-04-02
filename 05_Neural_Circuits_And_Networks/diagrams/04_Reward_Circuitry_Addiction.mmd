@@ -1,0 +1,25 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF69B4'}}}%%
+graph TD
+    REW["<b>REWARD CIRCUITRY</b><br/>Section 5.4"]
+
+    REW --> COMP["<b>Key Components</b>"]
+    REW --> RPE["<b>Reward Prediction Error</b>"]
+    REW --> ADD["<b>Addiction</b>"]
+
+    COMP --> VTA["VTA: 60% DA, 35% GABA<br/>Projects to NAc, PFC, Amygdala"]
+    COMP --> NAC["Nucleus Accumbens"]
+    COMP --> LPFC["PFC: Value, Decisions<br/>Top-down impulse control"]
+    COMP --> AMYG["Amygdala: Stimulus-value<br/>association"]
+    COMP --> LHAB["Lateral Habenula<br/>Anti-reward signal<br/>Inhibits VTA DA<br/>Hyperactive in Depression"]
+
+    NAC --> SHELL["Shell: Medial VTA DA<br/>Hedonic value - Liking<br/>Opioid/eCB hotspot"]
+    NAC --> CORE["Core: Lateral VTA DA<br/>Motivational salience - Wanting<br/>Action initiation"]
+
+    RPE --> RPOS["Unexpected reward<br/>DA burst = Positive RPE<br/>D1 LTP: Strengthen action"]
+    RPE --> RZERO["Expected reward<br/>No DA change = Zero RPE"]
+    RPE --> RNEG["Reward omitted<br/>DA dip = Negative RPE<br/>D2 LTD: Weaken action"]
+    RPE --> SHIFT["DA shifts to earliest<br/>predictive cue over learning"]
+
+    ADD --> DRUG["All drugs increase NAc DA"]
+    ADD --> MECH["Stim: Block/reverse DAT<br/>Opioids: Disinhibit VTA<br/>Nicotine: a4b2 nAChR VTA<br/>Alcohol: GABA-A, NMDA, Opioids<br/>Cannabis: CB1 disinhibit VTA"]
+    ADD --> CHRONIC["Chronic Changes:<br/>1. Tolerance - receptor downreg<br/>2. Sensitization - cue wanting<br/>3. Anti-reward: CRH, Dynorphin<br/>4. PFC hypofrontality"]

@@ -1,0 +1,22 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFD700'}}}%%
+graph TD
+    GLU["<b>GLUTAMATE</b><br/>Section 4.2 | Primary Excitatory ~80%"]
+
+    GLU --> SYN["<b>Synthesis</b><br/>Glutamine via Glutaminase<br/>or a-ketoglutarate TCA cycle<br/>Packaged by VGLUT1-3"]
+    GLU --> IONO["<b>Ionotropic Receptors</b>"]
+    GLU --> META["<b>Metabotropic mGluR1-8</b>"]
+    GLU --> EXCITO["<b>Excitotoxicity</b>"]
+
+    IONO --> AMPA["<b>AMPA</b> GluA1-4<br/>Na+/K+ fast 2-5ms<br/>Bulk excitatory transmission<br/>GluA2 = Ca2+ impermeable"]
+    IONO --> NMDA["<b>NMDA</b> GluN1+GluN2A-D<br/>Na+/K+/Ca2+ slow 50-300ms<br/>Mg2+ block, needs Glycine<br/>Coincidence detector for LTP"]
+    IONO --> KAIN["<b>Kainate</b> GluK1-5<br/>Presynaptic modulation<br/>Mossy fiber CA3<br/>Epileptogenesis"]
+
+    META --> GI["Group I mGluR1,5<br/>Gq, PLC, IP3+DAG<br/>Enhance excitability<br/>Endocannabinoid signaling"]
+    META --> GII["Group II mGluR2,3<br/>Gi, decrease cAMP<br/>Reduce glutamate release<br/>Autoreceptor, neuroprotective"]
+    META --> GIII["Group III mGluR4,6,7,8<br/>Gi, reduce release<br/>mGluR6 = retinal ON-bipolar"]
+
+    EXCITO --> EX1["Excess glutamate release"]
+    EX1 --> EX2["Sustained NMDA activation<br/>Massive Ca2+ influx"]
+    EX2 --> EX3["Calpains, NOS<br/>Mitochondrial dysfunction<br/>Neuronal death"]
+    EXCITO --> EX4["Prevention:<br/>Astrocytic EAAT2<br/>90% glutamate clearance"]
+    EXCITO --> EX5["Stroke, TBI,<br/>Neurodegeneration"]

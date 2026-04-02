@@ -1,0 +1,40 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#32CD32'}}}%%
+graph TD
+    ENC["<b>MEMORY ENCODING</b><br/>Chapter 7.2"]
+
+    ENC --> LOP["<b>Levels of Processing</b><br/>Craik & Lockhart 1972"]
+    ENC --> MECH["<b>Encoding Mechanisms</b>"]
+    ENC --> EMO["<b>Emotional Enhancement</b>"]
+
+    LOP --> DEEP["Deep Semantic Processing<br/>Stronger memories<br/>Left inferior frontal gyrus"]
+    LOP --> SHAL["Shallow Processing<br/>Surface features<br/>Weaker encoding"]
+    LOP --> SME["Subsequent Memory Effect<br/>MTL activation predicts<br/>later remembering"]
+
+    MECH --> TAG["<b>Synaptic Tagging & Capture</b><br/>Strong stim creates tag 1-2hrs<br/>Captures PRPs from other synapses<br/>Weak memories strengthened"]
+    MECH --> SEP["<b>Pattern Separation - DG</b><br/>Similar inputs to distinct codes<br/>1M granule cells, 2-5% active<br/>Declines with aging"]
+    MECH --> COMP["<b>Pattern Completion - CA3</b><br/>Partial cue to full recall<br/>30K recurrent synapses/neuron<br/>Autoassociative network"]
+
+    EMO --> AH["Amygdala-Hippocampal<br/>Interaction"]
+    EMO --> STRESS["Stress Hormones"]
+    EMO --> FLASH["Flashbulb Memories"]
+
+    AH --> AH1["BLA enhances hippocampal<br/>consolidation"]
+    AH --> AH2["Modulates NE via LC<br/>and ACh via basal forebrain"]
+
+    STRESS --> MOD["Moderate stress<br/>Enhanced consolidation"]
+    STRESS --> SEV["Severe/chronic stress<br/>Impaired WM & retrieval<br/>Yerkes-Dodson curve"]
+
+    FLASH --> FL1["Vivid & confident memories<br/>for emotional events"]
+    FLASH --> FL2["Accuracy degrades over time<br/>Amygdala boosts confidence<br/>more than accuracy"]
+
+    classDef header fill:#2c3e50,stroke:#1a252f,color:#fff,font-size:16px
+    classDef process fill:#27ae60,stroke:#1e8449,color:#fff
+    classDef mech fill:#2980b9,stroke:#1f6898,color:#fff
+    classDef emo fill:#e74c3c,stroke:#b83229,color:#fff
+    classDef detail fill:#ecf0f1,stroke:#bdc3c7,color:#2c3e50
+
+    class ENC header
+    class LOP,DEEP,SHAL,SME process
+    class MECH,TAG,SEP,COMP mech
+    class EMO,AH,STRESS,FLASH emo
+    class AH1,AH2,MOD,SEV,FL1,FL2 detail

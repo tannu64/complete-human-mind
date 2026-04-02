@@ -1,0 +1,41 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF6347'}}}%%
+graph TD
+    MONO["<b>MONOAMINE SYSTEMS</b><br/>Section 4.3"]
+
+    MONO --> DA["<b>DOPAMINE</b>"]
+    MONO --> SER["<b>SEROTONIN 5-HT</b>"]
+    MONO --> NE["<b>NOREPINEPHRINE</b>"]
+
+    DA --> DASYN["Tyrosine - TH rate-limiting<br/>L-DOPA - AADC - DA<br/>VMAT2 packaging"]
+    DA --> DAPATH["<b>4 Pathways</b>"]
+    DA --> DAREC["<b>Receptors GPCRs</b>"]
+    DA --> DATERM["Reuptake: DAT<br/>Cocaine, Methylphenidate<br/>Degrade: MAO, COMT"]
+    DA --> RPE["<b>Reward Prediction Error</b><br/>Unexpected = burst<br/>Expected = no change<br/>Omission = pause"]
+
+    DAPATH --> MESOL["Mesolimbic: VTA to NAc<br/>Reward, Motivation, Addiction"]
+    DAPATH --> MESOC["Mesocortical: VTA to PFC<br/>Working memory, Executive<br/>Hypo = Schizophrenia neg"]
+    DAPATH --> NIGRO["Nigrostriatal: SNc to Striatum<br/>Motor control, Habits<br/>Loss = Parkinson's"]
+    DAPATH --> TUBERO["Tuberoinfundibular<br/>Arcuate to Pituitary<br/>Inhibits Prolactin"]
+
+    DAREC --> D1["D1-like D1,D5<br/>Gs, increase cAMP<br/>Excitatory"]
+    DAREC --> D2["D2-like D2,D3,D4<br/>Gi, decrease cAMP<br/>GIRK hyperpolarization<br/>D2 = antipsychotic target"]
+
+    SER --> SERSYN["Tryptophan - TPH2 brain<br/>5-HTP - AADC - 5-HT<br/>95% in gut, not BBB"]
+    SER --> SERCB["Raphe Nuclei B1-B9<br/>Innervate entire forebrain"]
+    SER --> SERREC["<b>14+ Receptor Subtypes</b>"]
+    SER --> SERTERM["Reuptake: SERT<br/>SSRIs, MDMA<br/>Degrade: MAO-A to 5-HIAA"]
+
+    SERREC --> HT1A["5-HT1A Gi<br/>Autoreceptor raphe<br/>Buspirone target<br/>SSRI delay mechanism"]
+    SERREC --> HT2A["5-HT2A Gq<br/>Cortical excitation<br/>Psychedelics LSD, Psilocybin<br/>Atypical antipsychotics"]
+    SERREC --> HT3["5-HT3 Ionotropic<br/>Only ion channel 5-HT<br/>Emesis circuit<br/>Ondansetron antiemetic"]
+
+    NE --> NESYN["Tyrosine-DOPA-DA-NE<br/>DBH in vesicles"]
+    NE --> NELC["Locus Coeruleus<br/>15-30K neurons/side<br/>Projects everywhere<br/>Global arousal dial"]
+    NE --> NEREC["<b>Receptors GPCRs</b>"]
+    NE --> NETERM["Reuptake: NET<br/>SNRIs, Atomoxetine<br/>Degrade: MAO, COMT"]
+
+    NEREC --> A1["a1 Gq: Excitation, Arousal"]
+    NEREC --> A2["a2 Gi: Autoreceptor<br/>PFC WM enhancement<br/>Clonidine, Guanfacine"]
+    NEREC --> B1["b1 Gs: Cardiac<br/>Emotional memory"]
+
+    NE --> LCMODE["LC Modes<br/>Tonic: Broad arousal<br/>Phasic: Focused attention<br/>Optimal = intermediate"]

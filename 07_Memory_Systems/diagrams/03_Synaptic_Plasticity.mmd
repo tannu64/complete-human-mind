@@ -1,0 +1,44 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF6347'}}}%%
+graph TD
+    SP["<b>SYNAPTIC PLASTICITY</b><br/>Chapter 7.3 - LTP & LTD"]
+
+    SP --> LTP["<b>Long-Term Potentiation</b><br/>Increased synaptic strength<br/>Bliss & Lomo 1973"]
+    SP --> LTD["<b>Long-Term Depression</b><br/>Decreased synaptic strength"]
+    SP --> STDP["<b>Spike-Timing Dependent<br/>Plasticity - STDP</b>"]
+
+    %% --- LTP ---
+    LTP --> IND["<b>1. Induction</b><br/>High-freq stim releases Glutamate<br/>AMPA depolarization<br/>Relieves NMDA Mg2+ block<br/>Ca2+ influx"]
+    LTP --> ELTP["<b>2. Early LTP - 1-3 hrs</b><br/>No new protein synthesis"]
+    LTP --> LLTP["<b>3. Late LTP - 3hrs+</b><br/>Requires gene transcription"]
+
+    IND --> HEBB["NMDA = Coincidence Detector<br/>Pre + Post simultaneous<br/>Hebb's Rule"]
+
+    ELTP --> E1["CaMKII autophosphorylation"]
+    ELTP --> E2["PKC activation"]
+    ELTP --> E3["AMPA phosphorylation<br/>+ new AMPA insertion"]
+
+    LLTP --> L1["PKA to CREB to Gene transcription<br/>Arc, BDNF, Homer1a"]
+    LLTP --> L2["mTOR to Local protein synthesis"]
+    LLTP --> L3["Structural changes<br/>Spine growth, PSD enlargement"]
+    LLTP --> L4["BDNF-TrkB signaling<br/>MAPK/ERK + PI3K/Akt"]
+
+    %% --- LTD ---
+    LTD --> NMDA_LTD["<b>NMDA-LTD</b><br/>Low-freq stim 1Hz<br/>Modest Ca2+ rise<br/>Calcineurin + PP1<br/>AMPA endocytosis"]
+    LTD --> MGLUR["<b>mGluR-LTD</b><br/>mGluR5 hippocampus<br/>PLC to DAG/IP3<br/>FMRP-regulated translation<br/>Loss = Fragile X syndrome"]
+    LTD --> CBLTD["<b>Cerebellar LTD</b><br/>Climbing + Parallel fiber<br/>PKC to AMPA internalization<br/>Motor learning basis"]
+
+    %% --- STDP ---
+    STDP --> PRE_POST["Pre BEFORE Post<br/>within 10-20ms = LTP<br/>Causal relationship"]
+    STDP --> POST_PRE["Post BEFORE Pre<br/>within 20-50ms = LTD<br/>Anti-causal"]
+
+    classDef header fill:#2c3e50,stroke:#1a252f,color:#fff,font-size:16px
+    classDef ltp fill:#27ae60,stroke:#1e8449,color:#fff
+    classDef ltd fill:#e74c3c,stroke:#b83229,color:#fff
+    classDef stdp fill:#8e44ad,stroke:#6c3483,color:#fff
+    classDef detail fill:#ecf0f1,stroke:#bdc3c7,color:#2c3e50
+
+    class SP header
+    class LTP,IND,ELTP,LLTP ltp
+    class LTD,NMDA_LTD,MGLUR,CBLTD ltd
+    class STDP,PRE_POST,POST_PRE stdp
+    class HEBB,E1,E2,E3,L1,L2,L3,L4 detail

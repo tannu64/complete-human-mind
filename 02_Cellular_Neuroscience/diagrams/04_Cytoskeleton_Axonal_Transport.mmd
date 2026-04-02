@@ -1,0 +1,20 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#DA70D6'}}}%%
+graph TD
+    CYT["<b>CYTOSKELETON & AXONAL TRANSPORT</b><br/>Sections 2.4 & 2.5"]
+
+    CYT --> CYTO["<b>Cytoskeleton Components</b>"]
+    CYT --> TRANS["<b>Axonal Transport</b>"]
+
+    CYTO --> MT["<b>Microtubules</b><br/>a/b-tubulin dimers<br/>Motor protein tracks"]
+    CYTO --> NF["<b>Neurofilaments</b><br/>NF-L, NF-M, NF-H<br/>Determine axon caliber<br/>Affects conduction velocity"]
+    CYTO --> ACTIN["<b>Actin Filaments</b><br/>Enriched in spines<br/>LTP = spine enlargement<br/>LTD = spine shrinkage"]
+
+    MT --> KIN["Kinesin<br/>Anterograde: Soma to Terminal"]
+    MT --> DYN["Dynein<br/>Retrograde: Terminal to Soma"]
+    MT --> TAU["Tau Protein<br/>Stabilizes axonal MTs<br/>Hyperphosphorylated = NFTs<br/>in Alzheimer's"]
+
+    TRANS --> FANTA["Fast Anterograde<br/>200-400 mm/day<br/>Kinesin motor<br/>Vesicles, Mitochondria"]
+    TRANS --> SLOWA["Slow Anterograde<br/>0.2-8 mm/day<br/>Kinesin intermittent<br/>Cytoskeletal proteins"]
+    TRANS --> FRETR["Fast Retrograde<br/>150-300 mm/day<br/>Dynein motor<br/>Endosomes, NGF-TrkA"]
+
+    TRANS --> DIS["<b>Transport Disruption</b><br/>Kinesin mut = Spastic paraplegia<br/>Dynein mut = Motor neuron disease<br/>Tau hyperP = Alzheimer's"]

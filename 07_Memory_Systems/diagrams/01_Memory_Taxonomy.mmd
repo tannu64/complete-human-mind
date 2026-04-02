@@ -1,0 +1,54 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFD700'}}}%%
+graph TD
+    MEM["<b>MEMORY SYSTEMS</b><br/>Chapter 7.1 - Taxonomy"]
+
+    MEM --> DUR["<b>By Duration</b>"]
+    MEM --> CONT["<b>By Content</b>"]
+
+    %% --- Duration ---
+    DUR --> SENS["<b>Sensory Memory</b><br/>200ms - 3s"]
+    DUR --> STM["<b>Short-Term Memory</b><br/>15-30s, ~4 chunks"]
+    DUR --> WM["<b>Working Memory</b><br/>Active Manipulation"]
+    DUR --> LTM["<b>Long-Term Memory</b><br/>Hours to Lifetime"]
+
+    SENS --> ICON["Iconic - Visual<br/>~250ms decay<br/>Early visual cortex"]
+    SENS --> ECHO["Echoic - Auditory<br/>2-4s duration<br/>Auditory cortex"]
+
+    STM --> STM_D["PFC sustained firing<br/>Decays via interference"]
+
+    WM --> PL["Phonological Loop<br/>Verbal info, 2s trace<br/>Left parietal + Broca's"]
+    WM --> VS["Visuospatial Sketchpad<br/>Visual & spatial info<br/>Right parietal + IT cortex"]
+    WM --> EB["Episodic Buffer<br/>Integrates all sources<br/>Frontal + Hippocampus"]
+    WM --> CE["Central Executive<br/>Attention & control<br/>dlPFC + ACC"]
+
+    WM --> WM_MECH["<b>Neural Mechanisms</b>"]
+    WM_MECH --> PERS["Persistent Firing<br/>PFC delay activity"]
+    WM_MECH --> SYNM["Synaptic WM<br/>Activity-silent, Ca2+ based"]
+    WM_MECH --> OSC["Theta-Gamma Coupling<br/>Items in gamma bursts<br/>within theta cycles"]
+
+    %% --- Content ---
+    CONT --> EXPL["<b>Explicit / Declarative</b><br/>Conscious, Hippocampus-dependent"]
+    CONT --> IMPL["<b>Implicit / Non-Declarative</b><br/>Unconscious, Hippocampus-independent"]
+
+    EXPL --> EPIS["Episodic Memory<br/>Personal experiences<br/>What-Where-When<br/>Mental time travel"]
+    EXPL --> SEMA["Semantic Memory<br/>Facts & concepts<br/>Anterior temporal hub<br/>Abstracted from episodes"]
+
+    IMPL --> PROC["Procedural Memory<br/>Motor & cognitive skills<br/>Basal ganglia + Cerebellum"]
+    IMPL --> PRIM["Priming<br/>Perceptual or Conceptual<br/>Repetition suppression"]
+    IMPL --> COND["Classical Conditioning"]
+    IMPL --> NONA["Non-Associative Learning<br/>Habituation & Sensitization<br/>Spinal/brainstem circuits"]
+
+    COND --> DELAY["Delay Conditioning<br/>CS-US overlap<br/>Cerebellum / Amygdala"]
+    COND --> TRACE["Trace Conditioning<br/>CS-US gap<br/>Requires Hippocampus"]
+
+    classDef header fill:#2c3e50,stroke:#1a252f,color:#fff,font-size:16px
+    classDef duration fill:#3498db,stroke:#2176ad,color:#fff
+    classDef content fill:#e67e22,stroke:#b86415,color:#fff
+    classDef detail fill:#ecf0f1,stroke:#bdc3c7,color:#2c3e50
+    classDef mech fill:#9b59b6,stroke:#7d3c98,color:#fff
+
+    class MEM header
+    class DUR,SENS,STM,WM,LTM duration
+    class CONT,EXPL,IMPL content
+    class ICON,ECHO,STM_D,PL,VS,EB,CE,EPIS,SEMA,PROC,PRIM,COND,NONA,DELAY,TRACE detail
+    class WM_MECH,PERS,SYNM,OSC mech

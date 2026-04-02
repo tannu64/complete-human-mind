@@ -1,0 +1,18 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FF69B4','primaryColor':'#1a1a2e','primaryTextColor':'#fff'}}}%%
+graph TD
+    LIMB["<b>LIMBIC SYSTEM</b><br/>Section 1.4 - Emotion, Memory, Motivation"]
+
+    LIMB --> HPC["Hippocampus<br/>Memory formation<br/>Spatial navigation"]
+    LIMB --> AMG["Amygdala<br/>Emotional processing<br/>Fear"]
+    LIMB --> CING["Cingulate Cortex"]
+    LIMB --> INS["Insular Cortex<br/>Interoception<br/>Disgust, Empathy, Pain"]
+    LIMB --> FORN["Fornix<br/>WM tract Hippocampus<br/>to Mammillary bodies"]
+    LIMB --> MAMM["Mammillary Bodies<br/>Memory relay, Papez circuit<br/>Damage = amnesia"]
+    LIMB --> SEPT["Septal Nuclei<br/>Reward, Pleasure<br/>ACh to Hippocampus"]
+
+    CING --> ACC["Anterior Cingulate ACC<br/>Conflict monitoring<br/>Pain affect, Motivation"]
+    CING --> PCC["Posterior Cingulate PCC<br/>Self-referential processing<br/>Default mode network hub"]
+
+    HPC --> FORN
+    FORN --> MAMM
+    MAMM --> CING

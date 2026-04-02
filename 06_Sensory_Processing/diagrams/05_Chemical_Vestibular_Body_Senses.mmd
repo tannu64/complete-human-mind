@@ -1,0 +1,29 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#DA70D6'}}}%%
+graph TD
+    OTHER["<b>CHEMICAL, VESTIBULAR & BODY SENSES</b><br/>Sections 6.5-6.8"]
+
+    OTHER --> OLF["<b>Olfaction</b><br/>No thalamic relay to cortex"]
+    OTHER --> GUST["<b>Gustation - Taste</b>"]
+    OTHER --> VEST["<b>Vestibular System</b>"]
+    OTHER --> PROP["<b>Proprioception & Interoception</b>"]
+
+    OLF --> OSN["~6M OSNs<br/>~400 OR genes<br/>1 neuron = 1 receptor<br/>Combinatorial: 1T+ odors"]
+    OLF --> OBULB["Olfactory Bulb<br/>Same OR to same Glomerulus<br/>Lateral inhibition"]
+    OLF --> OCTX["Piriform: Odor identity<br/>Amygdala: Emotional valence<br/>Entorhinal: Memory link<br/>OFC: Conscious perception"]
+    OLF --> ONGEN["Lifelong Neurogenesis<br/>OSNs replaced every 30-60 days"]
+
+    GUST --> T5["5 Basic Tastes"]
+    T5 --> SWEET["Sweet: T1R2+T1R3<br/>Gustducin-PLCb2-TRPM5"]
+    T5 --> UMAMI["Umami: T1R1+T1R3"]
+    T5 --> BITTER["Bitter: ~25 T2R receptors<br/>Generalized avoid signal"]
+    T5 --> SOUR["Sour: Otop1 proton channel"]
+    T5 --> SALT["Salt: ENaC channels"]
+    GUST --> GPATH["CN VII,IX,X to NTS<br/>VPMpc thal to Insula<br/>OFC: Flavor = Taste + Smell"]
+
+    VEST --> SCC["3 Semicircular Canals<br/>Angular acceleration<br/>Cupula-Hair cells<br/>Orthogonal planes"]
+    VEST --> OTOL["Otolith Organs<br/>Utricle: Horizontal<br/>Saccule: Vertical<br/>Linear accel & Gravity"]
+    VEST --> VOUT["Outputs:<br/>VOR: Stabilize gaze 10ms<br/>Vestibulospinal: Posture<br/>PIVC cortex: Body orientation<br/>Cerebellum: VOR calibration"]
+
+    PROP --> SPIN["Muscle Spindles<br/>Ia: Dynamic stretch<br/>II: Static stretch<br/>Gamma motor: Sensitivity"]
+    PROP --> GTO["Golgi Tendon Organs<br/>Ib: Muscle tension<br/>Protective inhibition"]
+    PROP --> INTERO["Interoception<br/>Heartbeat, Breathing, Hunger<br/>Lamina I to Posterior Insula<br/>to Anterior Insula<br/>Body ownership & Feeling"]

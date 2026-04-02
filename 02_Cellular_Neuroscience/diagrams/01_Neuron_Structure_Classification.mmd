@@ -1,0 +1,41 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFD700'}}}%%
+graph TD
+    NEU["<b>THE NEURON</b><br/>Section 2.1 - Structure & Classification"]
+
+    NEU --> STRUCT["<b>Basic Structure</b>"]
+    NEU --> MORPH["<b>By Morphology</b>"]
+    NEU --> FUNC["<b>By Function</b>"]
+    NEU --> NT["<b>By Neurotransmitter</b>"]
+    NEU --> FIRE["<b>By Firing Pattern</b>"]
+    NEU --> SPEC["<b>Special Types</b>"]
+
+    STRUCT --> SOMA["Soma - Cell Body<br/>Nucleus, Nissl bodies<br/>Signal integration"]
+    STRUCT --> DEND["Dendrites<br/>5K-30K spines per neuron<br/>Active dendritic spikes<br/>Local protein synthesis"]
+    STRUCT --> AXON["Axon<br/>1mm to 1m+ length<br/>Hillock = trigger zone<br/>Boutons = NT release"]
+    STRUCT --> MYEL["Myelin Sheath<br/>Oligos CNS, Schwann PNS<br/>80% lipid, 20% protein<br/>Nodes of Ranvier"]
+
+    SOMA --> HILL["Axon Hillock<br/>Highest Nav density<br/>Lowest firing threshold"]
+    MYEL --> SALT["Saltatory Conduction<br/>0.5-2 m/s unmyelinated<br/>3-120 m/s myelinated"]
+
+    MORPH --> UNI["Unipolar<br/>Single process<br/>Rare in vertebrates"]
+    MORPH --> BI["Bipolar<br/>Retina, Olfactory<br/>Vestibular"]
+    MORPH --> PSEU["Pseudo-unipolar<br/>DRG sensory neurons"]
+    MORPH --> MULTI["Multipolar<br/>Most common CNS<br/>Pyramidal, Purkinje"]
+
+    FUNC --> SENS["Sensory Afferent<br/>Environment to CNS"]
+    FUNC --> MOT["Motor Efferent<br/>CNS to muscles/glands"]
+    FUNC --> INTER["Interneurons<br/>20-30% cortical<br/>Mostly GABAergic"]
+
+    NT --> GLUT["Glutamatergic ~80%<br/>Excitatory pyramidal"]
+    NT --> GABA["GABAergic ~20%<br/>Inhibitory interneurons<br/>Basket, Chandelier, etc."]
+    NT --> MOD["Modulatory<br/>ACh, DA, 5-HT, NE<br/>Brainstem/Basal forebrain"]
+
+    FIRE --> REG["Regular Spiking<br/>Most excitatory"]
+    FIRE --> FAST["Fast Spiking >200Hz<br/>PV+ basket cells"]
+    FIRE --> BURST["Intrinsically Bursting<br/>Layer V pyramidal"]
+    FIRE --> LOW["Low-Threshold<br/>SST+ interneurons"]
+
+    SPEC --> PURK["Purkinje Cells<br/>Cerebellar output, GABAergic"]
+    SPEC --> BETZ["Betz Cells<br/>Largest CNS ~100um<br/>Layer V motor cortex"]
+    SPEC --> VEN["Von Economo Neurons<br/>ACC & Insula<br/>Social cognition"]
+    SPEC --> MIRR["Mirror Neurons<br/>Premotor cortex<br/>Action execution & observation"]

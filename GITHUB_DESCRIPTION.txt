@@ -1,0 +1,10 @@
+REPO TITLE:
+complete-human-mind
+
+DESCRIPTION (170 chars - under 200):
+Mathematical model of the entire human brain. 17 chapters, 200+ equations from published neuroscience papers. Simulation framework + agent architecture planned. Open source.
+
+---
+
+TAGS:
+neuroscience, computational-neuroscience, mathematics, brain, ai, python, simulation, open-source

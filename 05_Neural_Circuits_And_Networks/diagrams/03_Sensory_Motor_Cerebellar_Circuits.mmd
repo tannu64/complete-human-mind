@@ -1,0 +1,25 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#32CD32'}}}%%
+graph TD
+    SM["<b>SENSORY & MOTOR CIRCUITS</b><br/>Section 5.3"]
+
+    SM --> VIS["<b>Visual Pathway</b>"]
+    SM --> MOT["<b>Motor: Cortico-BG-Thalamo-Cortical</b>"]
+    SM --> CBLM["<b>Cerebellar Circuit</b>"]
+
+    VIS --> VPATH["Retina - Optic nerve<br/>Chiasm - Optic tract - LGN - V1"]
+    VIS --> LGN["LGN Layers:<br/>1-2 Magnocellular: Motion, Luminance<br/>3-6 Parvocellular: Color, Detail<br/>Koniocellular: Blue-Yellow"]
+    VIS --> DORS["Dorsal Stream Where/How<br/>V1-V2-V3-V5/MT-Parietal<br/>Action, Spatial processing"]
+    VIS --> VENTR["Ventral Stream What<br/>V1-V2-V4-IT cortex<br/>Object & Face recognition"]
+
+    MOT --> ML["<b>5 Parallel Loops</b>"]
+    ML --> L1["Motor: SMA/Premotor<br/>Putamen-GPi-VL thal-SMA"]
+    ML --> L2["Oculomotor: FEF<br/>Caudate-GPi-VA/MD-FEF"]
+    ML --> L3["dlPFC: Working memory<br/>Caudate head-GPi-VA/MD-dlPFC"]
+    ML --> L4["OFC: Behavioral flexibility<br/>vmCaudate-GPi-MD-OFC"]
+    ML --> L5["ACC/Limbic: Motivation<br/>NAc-VP-MD-ACC"]
+
+    CBLM --> CB1["Mossy fibers - Granule cells<br/>Parallel fibers to Purkinje"]
+    CBLM --> CB2["Climbing fibers from Inf Olive<br/>to Purkinje 1:1 Teaching signal"]
+    CBLM --> CB3["Purkinje GABAergic output<br/>to Deep cerebellar nuclei"]
+    CBLM --> CB4["DCN to Thalamus to Cortex"]
+    CBLM --> CBLTD["Learning: Climbing fiber LTD<br/>at Parallel fiber-Purkinje synapse<br/>Error correction<br/>Marr-Albus-Ito model"]

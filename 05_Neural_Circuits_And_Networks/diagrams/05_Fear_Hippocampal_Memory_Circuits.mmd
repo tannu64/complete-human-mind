@@ -1,0 +1,23 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFA500'}}}%%
+graph TD
+    FH["<b>FEAR & MEMORY CIRCUITS</b><br/>Sections 5.5, 5.6"]
+
+    FH --> FEAR["<b>Fear/Threat Circuit</b>"]
+    FH --> HMEM["<b>Hippocampal-Cortical Memory</b>"]
+
+    FEAR --> FAST["Fast/Low Road<br/>Sensory Thalamus<br/>directly to BLA ~12ms"]
+    FEAR --> SLOW["Slow/High Road<br/>Sensory Cortex to BLA<br/>Detailed assessment"]
+
+    FEAR --> CEA_OUT["<b>CeA Outputs</b>"]
+    CEA_OUT --> LHYP["Lateral Hypothalamus<br/>Sympathetic activation"]
+    CEA_OUT --> PVN["PVN: HPA axis<br/>Cortisol release"]
+    CEA_OUT --> PAG["PAG: Freezing vlPAG<br/>Fight/Flight dlPAG"]
+    CEA_OUT --> LC["LC: NE arousal"]
+    CEA_OUT --> PBN["Parabrachial<br/>Respiratory changes"]
+
+    FEAR --> FCOND["<b>Fear Conditioning</b><br/>CS + US strengthens BLA<br/>via NMDA-dependent LTP"]
+    FEAR --> FEXT["<b>Fear Extinction</b><br/>New learning NOT erasure<br/>vmPFC activates ITC cells<br/>GABAergic inhibition of CeA<br/>Context-dependent, can relapse"]
+
+    HMEM --> ENC["<b>Encoding</b><br/>EC-DG-CA3-CA1<br/>Pattern separation in DG<br/>Pattern completion in CA3"]
+    HMEM --> CONS["<b>Consolidation in Sleep</b><br/>Sharp-wave ripples 100-250Hz<br/>+ Slow oscillations 0.5-1Hz<br/>+ Sleep spindles 12-16Hz<br/>Hippocampus to Neocortex"]
+    HMEM --> RETR["<b>Retrieval</b><br/>Hippocampal pattern completion<br/>for episodic/recent<br/>Direct cortical for semantic<br/>Anterior PFC monitors source"]

@@ -1,0 +1,14 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#FFD700'}}}%%
+graph TD
+    RMP["<b>RESTING MEMBRANE POTENTIAL</b><br/>Section 3.1 | -65 to -70 mV"]
+
+    RMP --> IONS["<b>Ionic Basis</b><br/>4 Major Ions"]
+    RMP --> PUMP["<b>Na+/K+-ATPase</b><br/>3 Na+ out, 2 K+ in<br/>40-70% brain ATP<br/>Contributes -3 to -5 mV"]
+    RMP --> GHK["<b>Goldman Equation</b><br/>Accounts for permeabilities<br/>40x more K+ permeable<br/>Resting near EK -90mV"]
+
+    IONS --> K["K+<br/>In: 140mM Out: 5mM<br/>EK = -90 mV"]
+    IONS --> NA["Na+<br/>In: 15mM Out: 145mM<br/>ENa = +60 mV"]
+    IONS --> CL["Cl-<br/>In: 10mM Out: 110mM<br/>ECl = -70 mV"]
+    IONS --> CA["Ca2+<br/>In: 0.0001mM Out: 2mM<br/>ECa = +130 mV"]
+
+    GHK --> LEAK["Leak K+ channels<br/>KCNK two-pore domain<br/>Keep Vm near EK"]

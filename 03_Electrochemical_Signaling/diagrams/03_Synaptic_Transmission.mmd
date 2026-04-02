@@ -1,0 +1,33 @@
+%%{init:{'theme':'dark','themeVariables':{'lineColor':'#00BFFF'}}}%%
+graph TD
+    SYN["<b>SYNAPTIC TRANSMISSION</b><br/>Section 3.3 | 100-150 Trillion Synapses"]
+
+    SYN --> CHEM["<b>Chemical Synapses ~99%</b>"]
+    SYN --> ELEC["<b>Electrical Synapses</b><br/>Gap Junctions"]
+
+    CHEM --> S1["1. AP arrives at terminal<br/>Opens Cav2.1 P/Q-type<br/>and Cav2.2 N-type"]
+    S1 --> S2["2. Ca2+ triggers fusion<br/>Synaptotagmin-1 sensor<br/>SNARE complex:<br/>Synaptobrevin + Syntaxin + SNAP-25"]
+    S2 --> S3["3. NT release to cleft<br/>~5000 molecules/vesicle<br/>Cleft ~20-40 nm wide"]
+    S3 --> S4["4. Receptor binding"]
+    S4 --> S5["5. Postsynaptic potentials"]
+    S5 --> S6["6. Signal termination"]
+
+    S4 --> IONO["<b>Ionotropic</b> Fast 1-5ms<br/>AMPA, NMDA, GABA-A<br/>Nicotinic ACh, 5-HT3"]
+    S4 --> METAB["<b>Metabotropic</b> Slow 100ms+<br/>GPCRs, 2nd messengers<br/>mGluR, GABA-B, DA, 5-HT"]
+
+    S5 --> EPSP["EPSP - Excitatory<br/>Depolarization 0.5-1mV<br/>Spatial + Temporal summation"]
+    S5 --> IPSP["IPSP - Inhibitory<br/>Hyperpolarization<br/>Cl- in GABA-A<br/>K+ out GABA-B GIRK"]
+
+    S6 --> REUP["Reuptake<br/>SERT, DAT, NET, EAAT"]
+    S6 --> ENZD["Enzymatic Degradation<br/>AChE, MAO, COMT"]
+    S6 --> DIFF["Diffusion away"]
+
+    CHEM --> POOLS["<b>Vesicle Pools</b>"]
+    POOLS --> RRP["RRP 5-10 vesicles<br/>Docked, depleted in 10ms"]
+    POOLS --> RECY["Recycling 5-20%<br/>Replenishes RRP"]
+    POOLS --> RESV["Reserve 80-90%<br/>200+ vesicles<br/>Actin-dependent"]
+
+    ELEC --> CONN["Connexons<br/>6 connexin subunits<br/>Direct ion passage"]
+    ELEC --> EFAST["Ultra-fast less than 0.1ms<br/>Bidirectional"]
+    ELEC --> ESYNC["Synchronization<br/>PV+ gamma oscillations<br/>Cardiac, Smooth muscle"]
+    ELEC --> EMETAB["Metabolic coupling<br/>IP3, cAMP, glucose<br/>Astrocyte networks"]
