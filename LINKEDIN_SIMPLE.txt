@@ -1,0 +1,29 @@
+SIMPLE LINKEDIN POST
+====================
+
+I got curious about something: what if you could build an AI system that actually follows how the brain works?
+
+Not loose metaphors. The real mathematics of neuroscience.
+
+So I started a simple process:
+
+Brain biology → Mathematical equations → Simulations → AI agents → Hardware
+
+What I've done so far:
+✅ Mapped out how the brain works
+✅ Converted brain functions to equations
+✅ Made it all open source
+
+What's next:
+→ Build working simulations from those equations
+→ Turn each brain region into an agent
+→ Connect them with a master coordinator
+→ Run it on a Raspberry Pi
+
+This is open source. Anyone can contribute and help build this.
+
+Repo: github.com/tannu64/complete-human-mind
+
+The vision is big, but the process is simple: understand the brain, translate it to math, build it in code.
+
+#AI #Neuroscience #OpenSource #BuildingInPublic
